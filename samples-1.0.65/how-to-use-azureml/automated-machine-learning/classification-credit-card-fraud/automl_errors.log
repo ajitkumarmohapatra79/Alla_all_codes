@@ -1,0 +1,1954 @@
+2019-10-14 17:25:51,688 - INFO - 293 : Starting usage telemetry collection
+2019-10-14 17:25:55,074 - INFO - 293 : Package azureml-train-automl missing from dependencies file.
+2019-10-14 17:25:55,074 - INFO - 293 : Using installed version: azureml-train-automl==1.0.65
+2019-10-14 17:25:55,075 - INFO - 293 : Package azureml-explain-model missing from dependencies file.
+2019-10-14 17:25:55,075 - INFO - 293 : Using installed version: azureml-explain-model==1.0.65
+2019-10-14 17:25:55,076 - INFO - 293 : Package azureml-dataprep missing from dependencies file.
+2019-10-14 17:25:55,076 - INFO - 293 : Using installed version: azureml-dataprep==1.1.19
+2019-10-14 17:25:55,076 - INFO - 293 : Package pytorch missing from dependencies file.
+2019-10-14 17:25:55,077 - INFO - 293 : Using pinned version: pytorch=1.1.0
+2019-10-14 17:25:55,077 - INFO - 293 : Package cudatoolkit missing from dependencies file.
+2019-10-14 17:25:55,077 - INFO - 293 : Using pinned version: cudatoolkit=9.0
+2019-10-14 17:25:55,077 - INFO - 293 : Package pytorch-transformers missing from dependencies file.
+2019-10-14 17:25:55,078 - INFO - 293 : Using pinned version: pytorch-transformers==1.0.0
+2019-10-14 17:25:55,078 - INFO - 293 : Package inference-schema missing from dependencies file.
+2019-10-14 17:25:55,079 - INFO - 293 : Package fbprophet missing from dependencies file.
+2019-10-14 17:25:55,079 - INFO - 293 : Package spacy missing from dependencies file.
+2019-10-14 17:25:55,079 - INFO - 293 : Using pinned version: spacy==2.1.8
+2019-10-14 17:25:55,080 - INFO - 293 : Package https://aka.ms/automl-resources/packages/en_core_web_sm-2.1.0.tar.gz missing from dependencies file.
+2019-10-14 17:25:55,433 - INFO - 293 : Validation service found the data has no errors.
+2019-10-14 17:25:55,434 - INFO - 293 : Start creating parent run with DTO:  - name: automl-classification-ccard
+ - subscription_id: be564fde-136b-4709-b7b6-abfc0bdfc134
+ - region: centralus
+ - spark_context: None
+ - spark_service: None
+ - azure_service: None
+ - iterations: 10
+ - primary_metric: average_precision_score_weighted
+ - task_type: classification
+ - validation_size: 0.0
+ - n_cross_validations: 5
+ - y_min: None
+ - y_max: None
+ - num_classes: None
+ - featurization: off
+ - preprocess: True
+ - lag_length: 0
+ - is_timeseries: False
+ - max_cores_per_iteration: 1
+ - max_concurrent_iterations: 5
+ - iteration_timeout_minutes: 5
+ - mem_in_mb: None
+ - enforce_time_on_windows: False
+ - experiment_timeout_minutes: None
+ - experiment_exit_score: None
+ - whitelist_models: None
+ - blacklist_algos: ['XGBoostClassifier', 'XGBoostClassifier']
+ - supported_models: ['LogisticRegression', 'SGD', 'MultinomialNaiveBayes', 'BernoulliNaiveBayes', 'SVM', 'LinearSVM', 'KNN', 'DecisionTree', 'RandomForest', 'ExtremeRandomTrees', 'LightGBM', 'XGBoostClassifier', 'NimbusMLAveragedPerceptronClassifier', 'NimbusMLLinearSVMClassifier', 'GradientBoosting', 'TensorFlowDNN', 'TensorFlowLinearClassifier']
+ - auto_blacklist: True
+ - blacklist_samples_reached: False
+ - exclude_nan_labels: True
+ - verbosity: 20
+ - show_warnings: False
+ - model_explainability: False
+ - service_url: None
+ - sdk_url: None
+ - sdk_packages: None
+ - enable_onnx_compatible_models: False
+ - enable_feature_sweeping: True
+ - vm_type: STANDARD_D2_V2
+ - telemetry_verbosity: INFO
+ - send_telemetry: True
+ - enable_early_stopping: False
+ - early_stopping_n_iters: 10
+ - metrics: None
+ - enable_ensembling: True
+ - enable_stack_ensembling: True
+ - ensemble_iterations: 10
+ - enable_tf: False
+ - enable_cache: True
+ - enable_subsampling: False
+ - subsample_seed: None
+ - enable_nimbusml: False
+ - enable_streaming: False
+ - label_column_name: Class
+ - weight_column_name: None
+ - cost_mode: 0
+ - metric_operation: maximize.
+2019-10-14 17:25:57,948 - INFO - 293 : [ParentRunID:AutoML_360b7b50-fd20-47b1-9391-2ffd9b5fb150] Remote run using input X and y.
+2019-10-14 17:25:58,796 - INFO - 293 : [RunId:AutoML_360b7b50-fd20-47b1-9391-2ffd9b5fb150]SDK dependencies versions:{"azureml-widgets": "1.0.65", "azureml-train": "1.0.65", "azureml-train-restclients-hyperdrive": "1.0.65", "azureml-train-core": "1.0.65", "azureml-train-automl": "1.0.65", "azureml-tensorboard": "1.0.65", "azureml-telemetry": "1.0.65", "azureml-sdk": "1.0.65", "azureml-pipeline": "1.0.65", "azureml-pipeline-steps": "1.0.65", "azureml-pipeline-core": "1.0.65", "azureml-opendatasets": "1.0.65", "azureml-explain-model": "1.0.65", "azureml-dataprep": "1.1.19", "azureml-dataprep-native": "13.0.3", "azureml-core": "1.0.65", "azureml-contrib-services": "1.0.65", "azureml-contrib-server": "1.0.65", "azureml-contrib-reinforcementlearning": "0.1.0.5524756", "azureml-contrib-opendatasets": "1.0.45", "azureml-contrib-notebook": "1.0.65", "azureml-contrib-explain-model": "1.0.65", "azureml-contrib-datadrift": "1.0.65", "azureml-automl-core": "1.0.65"}.
+2019-10-14 17:25:58,876 - INFO - 293 : Parent Run ID: AutoML_360b7b50-fd20-47b1-9391-2ffd9b5fb150
+2019-10-14 17:25:58,877 - INFO - 293 : Snapshotted folder: None with snapshot_id: 
+2019-10-14 17:25:58,877 - INFO - 293 : Starting a snapshot run (snapshotId : )
+2019-10-14 17:26:01,689 - INFO - 293 : memory usage 549024
+2019-10-14 17:26:01,690 - INFO - 293 : child memory usage 84632
+2019-10-14 17:26:01,691 - INFO - 293 : cpu time 6.536708
+2019-10-14 17:26:01,691 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:26:11,692 - INFO - 293 : memory usage 549056
+2019-10-14 17:26:11,693 - INFO - 293 : child memory usage 84632
+2019-10-14 17:26:11,693 - INFO - 293 : cpu time 6.594071
+2019-10-14 17:26:11,694 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:26:21,695 - INFO - 293 : memory usage 549320
+2019-10-14 17:26:21,695 - INFO - 293 : child memory usage 84632
+2019-10-14 17:26:21,696 - INFO - 293 : cpu time 6.6453299999999995
+2019-10-14 17:26:21,696 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:26:31,703 - INFO - 293 : memory usage 549344
+2019-10-14 17:26:31,704 - INFO - 293 : child memory usage 84632
+2019-10-14 17:26:31,705 - INFO - 293 : cpu time 6.695296
+2019-10-14 17:26:31,705 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:26:41,712 - INFO - 293 : memory usage 549360
+2019-10-14 17:26:41,713 - INFO - 293 : child memory usage 84632
+2019-10-14 17:26:41,714 - INFO - 293 : cpu time 6.7522269999999995
+2019-10-14 17:26:41,715 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:26:51,721 - INFO - 293 : memory usage 549364
+2019-10-14 17:26:51,722 - INFO - 293 : child memory usage 84632
+2019-10-14 17:26:51,723 - INFO - 293 : cpu time 6.80153
+2019-10-14 17:26:51,723 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:27:01,724 - INFO - 293 : memory usage 549364
+2019-10-14 17:27:01,725 - INFO - 293 : child memory usage 84632
+2019-10-14 17:27:01,725 - INFO - 293 : cpu time 6.854938
+2019-10-14 17:27:01,726 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:27:11,727 - INFO - 293 : memory usage 549368
+2019-10-14 17:27:11,728 - INFO - 293 : child memory usage 84632
+2019-10-14 17:27:11,729 - INFO - 293 : cpu time 6.903783
+2019-10-14 17:27:11,729 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:27:21,736 - INFO - 293 : memory usage 549376
+2019-10-14 17:27:21,737 - INFO - 293 : child memory usage 84632
+2019-10-14 17:27:21,738 - INFO - 293 : cpu time 6.957237
+2019-10-14 17:27:21,738 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:27:31,744 - INFO - 293 : memory usage 549380
+2019-10-14 17:27:31,745 - INFO - 293 : child memory usage 84632
+2019-10-14 17:27:31,746 - INFO - 293 : cpu time 7.005723
+2019-10-14 17:27:31,746 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:27:41,747 - INFO - 293 : memory usage 549380
+2019-10-14 17:27:41,748 - INFO - 293 : child memory usage 84632
+2019-10-14 17:27:41,755 - INFO - 293 : cpu time 7.059276
+2019-10-14 17:27:41,756 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:27:51,756 - INFO - 293 : memory usage 549380
+2019-10-14 17:27:51,757 - INFO - 293 : child memory usage 84632
+2019-10-14 17:27:51,758 - INFO - 293 : cpu time 7.11101
+2019-10-14 17:27:51,758 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:28:01,759 - INFO - 293 : memory usage 549384
+2019-10-14 17:28:01,760 - INFO - 293 : child memory usage 84632
+2019-10-14 17:28:01,761 - INFO - 293 : cpu time 7.167895
+2019-10-14 17:28:01,767 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:28:11,768 - INFO - 293 : memory usage 549384
+2019-10-14 17:28:11,769 - INFO - 293 : child memory usage 84632
+2019-10-14 17:28:11,770 - INFO - 293 : cpu time 7.219213
+2019-10-14 17:28:11,770 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:28:21,777 - INFO - 293 : memory usage 549384
+2019-10-14 17:28:21,778 - INFO - 293 : child memory usage 84632
+2019-10-14 17:28:21,778 - INFO - 293 : cpu time 7.27639
+2019-10-14 17:28:21,779 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:28:31,785 - INFO - 293 : memory usage 549384
+2019-10-14 17:28:31,786 - INFO - 293 : child memory usage 84632
+2019-10-14 17:28:31,787 - INFO - 293 : cpu time 7.323373
+2019-10-14 17:28:31,787 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:28:41,794 - INFO - 293 : memory usage 549384
+2019-10-14 17:28:41,795 - INFO - 293 : child memory usage 84632
+2019-10-14 17:28:41,795 - INFO - 293 : cpu time 7.37417
+2019-10-14 17:28:41,803 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:28:51,804 - INFO - 293 : memory usage 549384
+2019-10-14 17:28:51,804 - INFO - 293 : child memory usage 84632
+2019-10-14 17:28:51,805 - INFO - 293 : cpu time 7.403488
+2019-10-14 17:28:51,805 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:29:01,812 - INFO - 293 : memory usage 549384
+2019-10-14 17:29:01,813 - INFO - 293 : child memory usage 84632
+2019-10-14 17:29:01,814 - INFO - 293 : cpu time 7.456351
+2019-10-14 17:29:01,814 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:29:11,821 - INFO - 293 : memory usage 549384
+2019-10-14 17:29:11,822 - INFO - 293 : child memory usage 84632
+2019-10-14 17:29:11,823 - INFO - 293 : cpu time 7.507149
+2019-10-14 17:29:11,823 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:29:21,830 - INFO - 293 : memory usage 549384
+2019-10-14 17:29:21,831 - INFO - 293 : child memory usage 84632
+2019-10-14 17:29:21,831 - INFO - 293 : cpu time 7.563085
+2019-10-14 17:29:21,838 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:29:31,839 - INFO - 293 : memory usage 549384
+2019-10-14 17:29:31,839 - INFO - 293 : child memory usage 84632
+2019-10-14 17:29:31,840 - INFO - 293 : cpu time 7.619206
+2019-10-14 17:29:31,841 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:29:41,847 - INFO - 293 : memory usage 549384
+2019-10-14 17:29:41,848 - INFO - 293 : child memory usage 84632
+2019-10-14 17:29:41,849 - INFO - 293 : cpu time 7.672073
+2019-10-14 17:29:41,849 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:29:51,856 - INFO - 293 : memory usage 549384
+2019-10-14 17:29:51,857 - INFO - 293 : child memory usage 84632
+2019-10-14 17:29:51,858 - INFO - 293 : cpu time 7.723507
+2019-10-14 17:29:51,858 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:30:01,865 - INFO - 293 : memory usage 549384
+2019-10-14 17:30:01,866 - INFO - 293 : child memory usage 84632
+2019-10-14 17:30:01,866 - INFO - 293 : cpu time 7.776444
+2019-10-14 17:30:01,867 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:30:11,874 - INFO - 293 : memory usage 549384
+2019-10-14 17:30:11,875 - INFO - 293 : child memory usage 84632
+2019-10-14 17:30:11,875 - INFO - 293 : cpu time 7.823096
+2019-10-14 17:30:11,876 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:30:21,877 - INFO - 293 : memory usage 549384
+2019-10-14 17:30:21,878 - INFO - 293 : child memory usage 84632
+2019-10-14 17:30:21,879 - INFO - 293 : cpu time 7.879988
+2019-10-14 17:30:21,879 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:30:31,879 - INFO - 293 : memory usage 549384
+2019-10-14 17:30:31,880 - INFO - 293 : child memory usage 84632
+2019-10-14 17:30:31,881 - INFO - 293 : cpu time 7.922632
+2019-10-14 17:30:31,881 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:30:41,888 - INFO - 293 : memory usage 549384
+2019-10-14 17:30:41,889 - INFO - 293 : child memory usage 84632
+2019-10-14 17:30:41,890 - INFO - 293 : cpu time 7.97188
+2019-10-14 17:30:41,890 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:30:51,891 - INFO - 293 : memory usage 549384
+2019-10-14 17:30:51,892 - INFO - 293 : child memory usage 84632
+2019-10-14 17:30:51,899 - INFO - 293 : cpu time 8.029533
+2019-10-14 17:30:51,899 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:31:01,900 - INFO - 293 : memory usage 549384
+2019-10-14 17:31:01,901 - INFO - 293 : child memory usage 84632
+2019-10-14 17:31:01,902 - INFO - 293 : cpu time 8.088011
+2019-10-14 17:31:01,902 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:31:11,903 - INFO - 293 : memory usage 549384
+2019-10-14 17:31:11,904 - INFO - 293 : child memory usage 84632
+2019-10-14 17:31:11,904 - INFO - 293 : cpu time 8.145211
+2019-10-14 17:31:11,905 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:31:21,911 - INFO - 293 : memory usage 549384
+2019-10-14 17:31:21,912 - INFO - 293 : child memory usage 84632
+2019-10-14 17:31:21,913 - INFO - 293 : cpu time 8.197569
+2019-10-14 17:31:21,913 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:31:31,920 - INFO - 293 : memory usage 549384
+2019-10-14 17:31:31,921 - INFO - 293 : child memory usage 84632
+2019-10-14 17:31:31,922 - INFO - 293 : cpu time 8.241095
+2019-10-14 17:31:31,922 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:31:41,929 - INFO - 293 : memory usage 549384
+2019-10-14 17:31:41,930 - INFO - 293 : child memory usage 84632
+2019-10-14 17:31:41,931 - INFO - 293 : cpu time 8.289582
+2019-10-14 17:31:41,931 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:31:51,938 - INFO - 293 : memory usage 549384
+2019-10-14 17:31:51,939 - INFO - 293 : child memory usage 84632
+2019-10-14 17:31:51,939 - INFO - 293 : cpu time 8.342114
+2019-10-14 17:31:51,940 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:32:01,940 - INFO - 293 : memory usage 549384
+2019-10-14 17:32:01,941 - INFO - 293 : child memory usage 84632
+2019-10-14 17:32:01,942 - INFO - 293 : cpu time 8.39835
+2019-10-14 17:32:01,942 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:32:11,943 - INFO - 293 : memory usage 549384
+2019-10-14 17:32:11,944 - INFO - 293 : child memory usage 84632
+2019-10-14 17:32:11,945 - INFO - 293 : cpu time 8.444691
+2019-10-14 17:32:11,945 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:32:21,946 - INFO - 293 : memory usage 549384
+2019-10-14 17:32:21,947 - INFO - 293 : child memory usage 84632
+2019-10-14 17:32:21,948 - INFO - 293 : cpu time 8.497421
+2019-10-14 17:32:21,948 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:32:31,955 - INFO - 293 : memory usage 549384
+2019-10-14 17:32:31,956 - INFO - 293 : child memory usage 84632
+2019-10-14 17:32:31,957 - INFO - 293 : cpu time 8.553449
+2019-10-14 17:32:31,957 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:32:41,964 - INFO - 293 : memory usage 549384
+2019-10-14 17:32:41,964 - INFO - 293 : child memory usage 84632
+2019-10-14 17:32:41,965 - INFO - 293 : cpu time 8.606186
+2019-10-14 17:32:41,966 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:32:51,973 - INFO - 293 : memory usage 549384
+2019-10-14 17:32:51,974 - INFO - 293 : child memory usage 84632
+2019-10-14 17:32:51,975 - INFO - 293 : cpu time 8.663036
+2019-10-14 17:32:51,975 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:33:01,982 - INFO - 293 : memory usage 549384
+2019-10-14 17:33:01,983 - INFO - 293 : child memory usage 84632
+2019-10-14 17:33:01,984 - INFO - 293 : cpu time 8.715736
+2019-10-14 17:33:01,984 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:33:11,985 - INFO - 293 : memory usage 549384
+2019-10-14 17:33:11,986 - INFO - 293 : child memory usage 84632
+2019-10-14 17:33:11,987 - INFO - 293 : cpu time 8.762867
+2019-10-14 17:33:11,987 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:33:21,993 - INFO - 293 : memory usage 549384
+2019-10-14 17:33:21,994 - INFO - 293 : child memory usage 84632
+2019-10-14 17:33:21,995 - INFO - 293 : cpu time 8.814736
+2019-10-14 17:33:21,996 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:33:32,003 - INFO - 293 : memory usage 549384
+2019-10-14 17:33:32,004 - INFO - 293 : child memory usage 84632
+2019-10-14 17:33:32,005 - INFO - 293 : cpu time 8.868052
+2019-10-14 17:33:32,005 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:33:42,006 - INFO - 293 : memory usage 549384
+2019-10-14 17:33:42,007 - INFO - 293 : child memory usage 84632
+2019-10-14 17:33:42,008 - INFO - 293 : cpu time 8.918476
+2019-10-14 17:33:42,008 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:33:52,015 - INFO - 293 : memory usage 549384
+2019-10-14 17:33:52,015 - INFO - 293 : child memory usage 84632
+2019-10-14 17:33:52,016 - INFO - 293 : cpu time 8.974508
+2019-10-14 17:33:52,017 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:34:02,017 - INFO - 293 : memory usage 549384
+2019-10-14 17:34:02,018 - INFO - 293 : child memory usage 84632
+2019-10-14 17:34:02,019 - INFO - 293 : cpu time 9.026682
+2019-10-14 17:34:02,019 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:34:12,026 - INFO - 293 : memory usage 549384
+2019-10-14 17:34:12,026 - INFO - 293 : child memory usage 84632
+2019-10-14 17:34:12,027 - INFO - 293 : cpu time 9.074281
+2019-10-14 17:34:12,027 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:34:22,034 - INFO - 293 : memory usage 549384
+2019-10-14 17:34:22,035 - INFO - 293 : child memory usage 84632
+2019-10-14 17:34:22,036 - INFO - 293 : cpu time 9.130069
+2019-10-14 17:34:22,042 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:34:32,043 - INFO - 293 : memory usage 549384
+2019-10-14 17:34:32,044 - INFO - 293 : child memory usage 84632
+2019-10-14 17:34:32,045 - INFO - 293 : cpu time 9.181441
+2019-10-14 17:34:32,045 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:34:42,052 - INFO - 293 : memory usage 549384
+2019-10-14 17:34:42,053 - INFO - 293 : child memory usage 84632
+2019-10-14 17:34:42,054 - INFO - 293 : cpu time 9.239832
+2019-10-14 17:34:42,054 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:34:52,061 - INFO - 293 : memory usage 549384
+2019-10-14 17:34:52,062 - INFO - 293 : child memory usage 84632
+2019-10-14 17:34:52,063 - INFO - 293 : cpu time 9.284145
+2019-10-14 17:34:52,063 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:35:02,069 - INFO - 293 : memory usage 549384
+2019-10-14 17:35:02,070 - INFO - 293 : child memory usage 84632
+2019-10-14 17:35:02,071 - INFO - 293 : cpu time 9.335263
+2019-10-14 17:35:02,071 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:35:12,078 - INFO - 293 : memory usage 549384
+2019-10-14 17:35:12,079 - INFO - 293 : child memory usage 84632
+2019-10-14 17:35:12,079 - INFO - 293 : cpu time 9.38683
+2019-10-14 17:35:12,080 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:35:22,087 - INFO - 293 : memory usage 549384
+2019-10-14 17:35:22,087 - INFO - 293 : child memory usage 84632
+2019-10-14 17:35:22,088 - INFO - 293 : cpu time 9.439832
+2019-10-14 17:35:22,088 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:35:32,095 - INFO - 293 : memory usage 549384
+2019-10-14 17:35:32,096 - INFO - 293 : child memory usage 84632
+2019-10-14 17:35:32,097 - INFO - 293 : cpu time 9.490147
+2019-10-14 17:35:32,103 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:35:42,104 - INFO - 293 : memory usage 549384
+2019-10-14 17:35:42,105 - INFO - 293 : child memory usage 84632
+2019-10-14 17:35:42,106 - INFO - 293 : cpu time 9.54361
+2019-10-14 17:35:42,106 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:35:52,112 - INFO - 293 : memory usage 549384
+2019-10-14 17:35:52,113 - INFO - 293 : child memory usage 84632
+2019-10-14 17:35:52,114 - INFO - 293 : cpu time 9.599203
+2019-10-14 17:35:52,114 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:36:02,121 - INFO - 293 : memory usage 549384
+2019-10-14 17:36:02,122 - INFO - 293 : child memory usage 84632
+2019-10-14 17:36:02,123 - INFO - 293 : cpu time 9.640641
+2019-10-14 17:36:02,123 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:36:12,130 - INFO - 293 : memory usage 549384
+2019-10-14 17:36:12,130 - INFO - 293 : child memory usage 84632
+2019-10-14 17:36:12,131 - INFO - 293 : cpu time 9.691124
+2019-10-14 17:36:12,131 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:36:22,132 - INFO - 293 : memory usage 549384
+2019-10-14 17:36:22,133 - INFO - 293 : child memory usage 84632
+2019-10-14 17:36:22,134 - INFO - 293 : cpu time 9.739769
+2019-10-14 17:36:22,134 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:36:32,142 - INFO - 293 : memory usage 549384
+2019-10-14 17:36:32,142 - INFO - 293 : child memory usage 84632
+2019-10-14 17:36:32,143 - INFO - 293 : cpu time 9.788867
+2019-10-14 17:36:32,143 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:36:42,151 - INFO - 293 : memory usage 549384
+2019-10-14 17:36:42,151 - INFO - 293 : child memory usage 84632
+2019-10-14 17:36:42,152 - INFO - 293 : cpu time 9.845363
+2019-10-14 17:36:42,152 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:36:52,153 - INFO - 293 : memory usage 549384
+2019-10-14 17:36:52,154 - INFO - 293 : child memory usage 84632
+2019-10-14 17:36:52,155 - INFO - 293 : cpu time 9.900838
+2019-10-14 17:36:52,155 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:37:02,162 - INFO - 293 : memory usage 549384
+2019-10-14 17:37:02,162 - INFO - 293 : child memory usage 84632
+2019-10-14 17:37:02,163 - INFO - 293 : cpu time 9.954789
+2019-10-14 17:37:02,163 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:37:12,171 - INFO - 293 : memory usage 549384
+2019-10-14 17:37:12,172 - INFO - 293 : child memory usage 84632
+2019-10-14 17:37:12,172 - INFO - 293 : cpu time 10.005149
+2019-10-14 17:37:12,173 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:37:22,173 - INFO - 293 : memory usage 549384
+2019-10-14 17:37:22,174 - INFO - 293 : child memory usage 84632
+2019-10-14 17:37:22,181 - INFO - 293 : cpu time 10.059652
+2019-10-14 17:37:22,182 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:37:32,183 - INFO - 293 : memory usage 549384
+2019-10-14 17:37:32,183 - INFO - 293 : child memory usage 84632
+2019-10-14 17:37:32,184 - INFO - 293 : cpu time 10.11569
+2019-10-14 17:37:32,185 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:37:42,191 - INFO - 293 : memory usage 549384
+2019-10-14 17:37:42,191 - INFO - 293 : child memory usage 84632
+2019-10-14 17:37:42,192 - INFO - 293 : cpu time 10.175638
+2019-10-14 17:37:42,199 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:37:52,200 - INFO - 293 : memory usage 549384
+2019-10-14 17:37:52,200 - INFO - 293 : child memory usage 84632
+2019-10-14 17:37:52,201 - INFO - 293 : cpu time 10.232705
+2019-10-14 17:37:52,202 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:38:02,208 - INFO - 293 : memory usage 549384
+2019-10-14 17:38:02,209 - INFO - 293 : child memory usage 84632
+2019-10-14 17:38:02,210 - INFO - 293 : cpu time 10.289004
+2019-10-14 17:38:02,210 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:38:12,217 - INFO - 293 : memory usage 549384
+2019-10-14 17:38:12,218 - INFO - 293 : child memory usage 84632
+2019-10-14 17:38:12,219 - INFO - 293 : cpu time 10.335288
+2019-10-14 17:38:12,219 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:38:22,226 - INFO - 293 : memory usage 549384
+2019-10-14 17:38:22,227 - INFO - 293 : child memory usage 84632
+2019-10-14 17:38:22,228 - INFO - 293 : cpu time 10.391632
+2019-10-14 17:38:22,228 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:38:32,229 - INFO - 293 : memory usage 549384
+2019-10-14 17:38:32,230 - INFO - 293 : child memory usage 84632
+2019-10-14 17:38:32,230 - INFO - 293 : cpu time 10.447769
+2019-10-14 17:38:32,231 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:38:42,231 - INFO - 293 : memory usage 549384
+2019-10-14 17:38:42,232 - INFO - 293 : child memory usage 84632
+2019-10-14 17:38:42,233 - INFO - 293 : cpu time 10.499869
+2019-10-14 17:38:42,233 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:38:52,240 - INFO - 293 : memory usage 549384
+2019-10-14 17:38:52,241 - INFO - 293 : child memory usage 84632
+2019-10-14 17:38:52,242 - INFO - 293 : cpu time 10.546978
+2019-10-14 17:38:52,243 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:39:02,250 - INFO - 293 : memory usage 549384
+2019-10-14 17:39:02,251 - INFO - 293 : child memory usage 84632
+2019-10-14 17:39:02,252 - INFO - 293 : cpu time 10.598984
+2019-10-14 17:39:02,252 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:39:12,259 - INFO - 293 : memory usage 549384
+2019-10-14 17:39:12,260 - INFO - 293 : child memory usage 84632
+2019-10-14 17:39:12,261 - INFO - 293 : cpu time 10.656381
+2019-10-14 17:39:12,261 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:39:22,268 - INFO - 293 : memory usage 549384
+2019-10-14 17:39:22,269 - INFO - 293 : child memory usage 84632
+2019-10-14 17:39:22,270 - INFO - 293 : cpu time 10.711232
+2019-10-14 17:39:22,270 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:39:32,277 - INFO - 293 : memory usage 549384
+2019-10-14 17:39:32,278 - INFO - 293 : child memory usage 84632
+2019-10-14 17:39:32,278 - INFO - 293 : cpu time 10.770262
+2019-10-14 17:39:32,279 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:39:42,280 - INFO - 293 : memory usage 549384
+2019-10-14 17:39:42,280 - INFO - 293 : child memory usage 84632
+2019-10-14 17:39:42,281 - INFO - 293 : cpu time 10.823086
+2019-10-14 17:39:42,281 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:39:52,288 - INFO - 293 : memory usage 549384
+2019-10-14 17:39:52,289 - INFO - 293 : child memory usage 84632
+2019-10-14 17:39:52,290 - INFO - 293 : cpu time 10.875661
+2019-10-14 17:39:52,290 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:40:02,297 - INFO - 293 : memory usage 549384
+2019-10-14 17:40:02,297 - INFO - 293 : child memory usage 84632
+2019-10-14 17:40:02,298 - INFO - 293 : cpu time 10.926079
+2019-10-14 17:40:02,304 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:40:12,305 - INFO - 293 : memory usage 549384
+2019-10-14 17:40:12,306 - INFO - 293 : child memory usage 84632
+2019-10-14 17:40:12,307 - INFO - 293 : cpu time 10.978895
+2019-10-14 17:40:12,307 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:40:22,314 - INFO - 293 : memory usage 549384
+2019-10-14 17:40:22,315 - INFO - 293 : child memory usage 84632
+2019-10-14 17:40:22,315 - INFO - 293 : cpu time 11.030063
+2019-10-14 17:40:22,316 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:40:32,323 - INFO - 293 : memory usage 549384
+2019-10-14 17:40:32,323 - INFO - 293 : child memory usage 84632
+2019-10-14 17:40:32,330 - INFO - 293 : cpu time 11.079991
+2019-10-14 17:40:32,331 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:40:42,331 - INFO - 293 : memory usage 549384
+2019-10-14 17:40:42,332 - INFO - 293 : child memory usage 84632
+2019-10-14 17:40:42,333 - INFO - 293 : cpu time 11.136788
+2019-10-14 17:40:42,333 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:40:52,334 - INFO - 293 : memory usage 549384
+2019-10-14 17:40:52,335 - INFO - 293 : child memory usage 84632
+2019-10-14 17:40:52,336 - INFO - 293 : cpu time 11.187738
+2019-10-14 17:40:52,336 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:41:02,343 - INFO - 293 : memory usage 549384
+2019-10-14 17:41:02,344 - INFO - 293 : child memory usage 84632
+2019-10-14 17:41:02,344 - INFO - 293 : cpu time 11.237852
+2019-10-14 17:41:02,351 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:41:12,352 - INFO - 293 : memory usage 549384
+2019-10-14 17:41:12,352 - INFO - 293 : child memory usage 84632
+2019-10-14 17:41:12,353 - INFO - 293 : cpu time 11.295132
+2019-10-14 17:41:12,354 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:41:22,354 - INFO - 293 : memory usage 549384
+2019-10-14 17:41:22,355 - INFO - 293 : child memory usage 84632
+2019-10-14 17:41:22,356 - INFO - 293 : cpu time 11.352308
+2019-10-14 17:41:22,356 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:41:32,363 - INFO - 293 : memory usage 549384
+2019-10-14 17:41:32,364 - INFO - 293 : child memory usage 84632
+2019-10-14 17:41:32,364 - INFO - 293 : cpu time 11.381486
+2019-10-14 17:41:32,365 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:41:42,373 - INFO - 293 : memory usage 549384
+2019-10-14 17:41:42,374 - INFO - 293 : child memory usage 84632
+2019-10-14 17:41:42,375 - INFO - 293 : cpu time 11.423857
+2019-10-14 17:41:42,375 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:41:52,382 - INFO - 293 : memory usage 549384
+2019-10-14 17:41:52,383 - INFO - 293 : child memory usage 84632
+2019-10-14 17:41:52,383 - INFO - 293 : cpu time 11.479189
+2019-10-14 17:41:52,384 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:42:02,385 - INFO - 293 : memory usage 549384
+2019-10-14 17:42:02,386 - INFO - 293 : child memory usage 84632
+2019-10-14 17:42:02,386 - INFO - 293 : cpu time 11.53198
+2019-10-14 17:42:02,387 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:42:12,393 - INFO - 293 : memory usage 549384
+2019-10-14 17:42:12,394 - INFO - 293 : child memory usage 84632
+2019-10-14 17:42:12,395 - INFO - 293 : cpu time 11.587979
+2019-10-14 17:42:12,395 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:42:22,402 - INFO - 293 : memory usage 549384
+2019-10-14 17:42:22,403 - INFO - 293 : child memory usage 84632
+2019-10-14 17:42:22,404 - INFO - 293 : cpu time 11.642118
+2019-10-14 17:42:22,411 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:42:32,411 - INFO - 293 : memory usage 549384
+2019-10-14 17:42:32,412 - INFO - 293 : child memory usage 84632
+2019-10-14 17:42:32,413 - INFO - 293 : cpu time 11.693862
+2019-10-14 17:42:32,413 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:42:42,420 - INFO - 293 : memory usage 549384
+2019-10-14 17:42:42,421 - INFO - 293 : child memory usage 84632
+2019-10-14 17:42:42,422 - INFO - 293 : cpu time 11.742267
+2019-10-14 17:42:42,422 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:42:52,429 - INFO - 293 : memory usage 549384
+2019-10-14 17:42:52,430 - INFO - 293 : child memory usage 84632
+2019-10-14 17:42:52,430 - INFO - 293 : cpu time 11.792409
+2019-10-14 17:42:52,431 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:43:02,437 - INFO - 293 : memory usage 549384
+2019-10-14 17:43:02,438 - INFO - 293 : child memory usage 84632
+2019-10-14 17:43:02,439 - INFO - 293 : cpu time 11.84348
+2019-10-14 17:43:02,439 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:43:12,446 - INFO - 293 : memory usage 549384
+2019-10-14 17:43:12,447 - INFO - 293 : child memory usage 84632
+2019-10-14 17:43:12,447 - INFO - 293 : cpu time 11.895896
+2019-10-14 17:43:12,448 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:43:22,454 - INFO - 293 : memory usage 549384
+2019-10-14 17:43:22,455 - INFO - 293 : child memory usage 84632
+2019-10-14 17:43:22,455 - INFO - 293 : cpu time 11.952082
+2019-10-14 17:43:22,456 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:43:32,463 - INFO - 293 : memory usage 549384
+2019-10-14 17:43:32,463 - INFO - 293 : child memory usage 84632
+2019-10-14 17:43:32,464 - INFO - 293 : cpu time 12.000997
+2019-10-14 17:43:32,464 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:43:42,465 - INFO - 293 : memory usage 549384
+2019-10-14 17:43:42,466 - INFO - 293 : child memory usage 84632
+2019-10-14 17:43:42,467 - INFO - 293 : cpu time 12.053197
+2019-10-14 17:43:42,467 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:43:52,468 - INFO - 293 : memory usage 549384
+2019-10-14 17:43:52,469 - INFO - 293 : child memory usage 84632
+2019-10-14 17:43:52,470 - INFO - 293 : cpu time 12.099919
+2019-10-14 17:43:52,470 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:44:02,476 - INFO - 293 : memory usage 549384
+2019-10-14 17:44:02,477 - INFO - 293 : child memory usage 84632
+2019-10-14 17:44:02,478 - INFO - 293 : cpu time 12.147056
+2019-10-14 17:44:02,479 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:44:12,480 - INFO - 293 : memory usage 549384
+2019-10-14 17:44:12,480 - INFO - 293 : child memory usage 84632
+2019-10-14 17:44:12,481 - INFO - 293 : cpu time 12.198173
+2019-10-14 17:44:12,482 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:44:22,489 - INFO - 293 : memory usage 549384
+2019-10-14 17:44:22,490 - INFO - 293 : child memory usage 84632
+2019-10-14 17:44:22,490 - INFO - 293 : cpu time 12.253205
+2019-10-14 17:44:22,491 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:44:32,498 - INFO - 293 : memory usage 549384
+2019-10-14 17:44:32,499 - INFO - 293 : child memory usage 84632
+2019-10-14 17:44:32,499 - INFO - 293 : cpu time 12.306072
+2019-10-14 17:44:32,500 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:44:42,507 - INFO - 293 : memory usage 549384
+2019-10-14 17:44:42,508 - INFO - 293 : child memory usage 84632
+2019-10-14 17:44:42,509 - INFO - 293 : cpu time 12.360264
+2019-10-14 17:44:42,509 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:44:52,516 - INFO - 293 : memory usage 549384
+2019-10-14 17:44:52,517 - INFO - 293 : child memory usage 84632
+2019-10-14 17:44:52,517 - INFO - 293 : cpu time 12.413134
+2019-10-14 17:44:52,518 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:45:02,525 - INFO - 293 : memory usage 549384
+2019-10-14 17:45:02,526 - INFO - 293 : child memory usage 84632
+2019-10-14 17:45:02,526 - INFO - 293 : cpu time 12.466524
+2019-10-14 17:45:02,527 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:45:12,528 - INFO - 293 : memory usage 549384
+2019-10-14 17:45:12,528 - INFO - 293 : child memory usage 84632
+2019-10-14 17:45:12,529 - INFO - 293 : cpu time 12.527903
+2019-10-14 17:45:12,529 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:45:22,530 - INFO - 293 : memory usage 549384
+2019-10-14 17:45:22,531 - INFO - 293 : child memory usage 84632
+2019-10-14 17:45:22,532 - INFO - 293 : cpu time 12.578294
+2019-10-14 17:45:22,532 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:45:32,539 - INFO - 293 : memory usage 549384
+2019-10-14 17:45:32,540 - INFO - 293 : child memory usage 84632
+2019-10-14 17:45:32,540 - INFO - 293 : cpu time 12.632864
+2019-10-14 17:45:32,541 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:45:42,548 - INFO - 293 : memory usage 549384
+2019-10-14 17:45:42,549 - INFO - 293 : child memory usage 84632
+2019-10-14 17:45:42,550 - INFO - 293 : cpu time 12.686156
+2019-10-14 17:45:42,550 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:45:52,557 - INFO - 293 : memory usage 549384
+2019-10-14 17:45:52,558 - INFO - 293 : child memory usage 84632
+2019-10-14 17:45:52,558 - INFO - 293 : cpu time 12.73901
+2019-10-14 17:45:52,559 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:46:02,565 - INFO - 293 : memory usage 549384
+2019-10-14 17:46:02,566 - INFO - 293 : child memory usage 84632
+2019-10-14 17:46:02,567 - INFO - 293 : cpu time 12.781113
+2019-10-14 17:46:02,567 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:46:12,568 - INFO - 293 : memory usage 549384
+2019-10-14 17:46:12,569 - INFO - 293 : child memory usage 84632
+2019-10-14 17:46:12,569 - INFO - 293 : cpu time 12.830916
+2019-10-14 17:46:12,570 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:46:22,576 - INFO - 293 : memory usage 549384
+2019-10-14 17:46:22,577 - INFO - 293 : child memory usage 84632
+2019-10-14 17:46:22,578 - INFO - 293 : cpu time 12.879477
+2019-10-14 17:46:22,578 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:46:32,584 - INFO - 293 : memory usage 549384
+2019-10-14 17:46:32,585 - INFO - 293 : child memory usage 84632
+2019-10-14 17:46:32,586 - INFO - 293 : cpu time 12.93099
+2019-10-14 17:46:32,587 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:46:42,587 - INFO - 293 : memory usage 549384
+2019-10-14 17:46:42,588 - INFO - 293 : child memory usage 84632
+2019-10-14 17:46:42,589 - INFO - 293 : cpu time 12.973678
+2019-10-14 17:46:42,589 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:46:52,597 - INFO - 293 : memory usage 549384
+2019-10-14 17:46:52,598 - INFO - 293 : child memory usage 84632
+2019-10-14 17:46:52,598 - INFO - 293 : cpu time 13.031072
+2019-10-14 17:46:52,599 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:47:02,605 - INFO - 293 : memory usage 549384
+2019-10-14 17:47:02,606 - INFO - 293 : child memory usage 84632
+2019-10-14 17:47:02,607 - INFO - 293 : cpu time 13.081579
+2019-10-14 17:47:02,607 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:47:12,614 - INFO - 293 : memory usage 549384
+2019-10-14 17:47:12,615 - INFO - 293 : child memory usage 84632
+2019-10-14 17:47:12,616 - INFO - 293 : cpu time 13.130145
+2019-10-14 17:47:12,616 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:47:22,623 - INFO - 293 : memory usage 549384
+2019-10-14 17:47:22,624 - INFO - 293 : child memory usage 84632
+2019-10-14 17:47:22,625 - INFO - 293 : cpu time 13.187623
+2019-10-14 17:47:22,625 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:47:32,632 - INFO - 293 : memory usage 549384
+2019-10-14 17:47:32,633 - INFO - 293 : child memory usage 84632
+2019-10-14 17:47:32,633 - INFO - 293 : cpu time 13.260049
+2019-10-14 17:47:32,633 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:47:42,640 - INFO - 293 : memory usage 549384
+2019-10-14 17:47:42,641 - INFO - 293 : child memory usage 84632
+2019-10-14 17:47:42,642 - INFO - 293 : cpu time 13.316823
+2019-10-14 17:47:42,643 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:47:52,643 - INFO - 293 : memory usage 549384
+2019-10-14 17:47:52,644 - INFO - 293 : child memory usage 84632
+2019-10-14 17:47:52,645 - INFO - 293 : cpu time 13.367513
+2019-10-14 17:47:52,652 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:48:02,653 - INFO - 293 : memory usage 549384
+2019-10-14 17:48:02,653 - INFO - 293 : child memory usage 84632
+2019-10-14 17:48:02,654 - INFO - 293 : cpu time 13.424617
+2019-10-14 17:48:02,655 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:48:12,656 - INFO - 293 : memory usage 549384
+2019-10-14 17:48:12,656 - INFO - 293 : child memory usage 84632
+2019-10-14 17:48:12,657 - INFO - 293 : cpu time 13.480806
+2019-10-14 17:48:12,658 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:48:22,665 - INFO - 293 : memory usage 549384
+2019-10-14 17:48:22,666 - INFO - 293 : child memory usage 84632
+2019-10-14 17:48:22,667 - INFO - 293 : cpu time 13.522647
+2019-10-14 17:48:22,667 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:48:32,674 - INFO - 293 : memory usage 549384
+2019-10-14 17:48:32,675 - INFO - 293 : child memory usage 84632
+2019-10-14 17:48:32,676 - INFO - 293 : cpu time 13.576731
+2019-10-14 17:48:32,676 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:48:42,677 - INFO - 293 : memory usage 549384
+2019-10-14 17:48:42,678 - INFO - 293 : child memory usage 84632
+2019-10-14 17:48:42,679 - INFO - 293 : cpu time 13.633581
+2019-10-14 17:48:42,679 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:48:52,686 - INFO - 293 : memory usage 549384
+2019-10-14 17:48:52,686 - INFO - 293 : child memory usage 84632
+2019-10-14 17:48:52,687 - INFO - 293 : cpu time 13.691286
+2019-10-14 17:48:52,687 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:49:02,695 - INFO - 293 : memory usage 549384
+2019-10-14 17:49:02,695 - INFO - 293 : child memory usage 84632
+2019-10-14 17:49:02,696 - INFO - 293 : cpu time 13.749234
+2019-10-14 17:49:02,696 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:49:12,703 - INFO - 293 : memory usage 549384
+2019-10-14 17:49:12,704 - INFO - 293 : child memory usage 84632
+2019-10-14 17:49:12,705 - INFO - 293 : cpu time 13.791136999999999
+2019-10-14 17:49:12,705 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:49:22,713 - INFO - 293 : memory usage 549384
+2019-10-14 17:49:22,714 - INFO - 293 : child memory usage 84632
+2019-10-14 17:49:22,714 - INFO - 293 : cpu time 13.844836
+2019-10-14 17:49:22,715 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:49:32,716 - INFO - 293 : memory usage 549384
+2019-10-14 17:49:32,717 - INFO - 293 : child memory usage 84632
+2019-10-14 17:49:32,718 - INFO - 293 : cpu time 13.900033
+2019-10-14 17:49:32,718 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:49:42,725 - INFO - 293 : memory usage 549384
+2019-10-14 17:49:42,726 - INFO - 293 : child memory usage 84632
+2019-10-14 17:49:42,727 - INFO - 293 : cpu time 13.957184
+2019-10-14 17:49:42,727 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:49:52,734 - INFO - 293 : memory usage 549384
+2019-10-14 17:49:52,735 - INFO - 293 : child memory usage 84632
+2019-10-14 17:49:52,735 - INFO - 293 : cpu time 14.01486
+2019-10-14 17:49:52,736 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:50:02,742 - INFO - 293 : memory usage 549384
+2019-10-14 17:50:02,743 - INFO - 293 : child memory usage 84632
+2019-10-14 17:50:02,744 - INFO - 293 : cpu time 14.073543
+2019-10-14 17:50:02,744 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:50:12,751 - INFO - 293 : memory usage 549384
+2019-10-14 17:50:12,752 - INFO - 293 : child memory usage 84632
+2019-10-14 17:50:12,753 - INFO - 293 : cpu time 14.12277
+2019-10-14 17:50:12,753 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:50:22,760 - INFO - 293 : memory usage 549384
+2019-10-14 17:50:22,760 - INFO - 293 : child memory usage 84632
+2019-10-14 17:50:22,761 - INFO - 293 : cpu time 14.178617
+2019-10-14 17:50:22,761 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:50:32,768 - INFO - 293 : memory usage 549384
+2019-10-14 17:50:32,769 - INFO - 293 : child memory usage 84632
+2019-10-14 17:50:32,770 - INFO - 293 : cpu time 14.229545
+2019-10-14 17:50:32,770 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:50:42,771 - INFO - 293 : memory usage 549384
+2019-10-14 17:50:42,771 - INFO - 293 : child memory usage 84632
+2019-10-14 17:50:42,772 - INFO - 293 : cpu time 14.282685
+2019-10-14 17:50:42,772 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:50:52,773 - INFO - 293 : memory usage 549384
+2019-10-14 17:50:52,774 - INFO - 293 : child memory usage 84632
+2019-10-14 17:50:52,775 - INFO - 293 : cpu time 14.335002
+2019-10-14 17:50:52,775 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:51:02,782 - INFO - 293 : memory usage 549384
+2019-10-14 17:51:02,783 - INFO - 293 : child memory usage 84632
+2019-10-14 17:51:02,784 - INFO - 293 : cpu time 14.391732
+2019-10-14 17:51:02,784 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:51:12,791 - INFO - 293 : memory usage 549384
+2019-10-14 17:51:12,792 - INFO - 293 : child memory usage 84632
+2019-10-14 17:51:12,793 - INFO - 293 : cpu time 14.449324
+2019-10-14 17:51:12,793 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:51:22,794 - INFO - 293 : memory usage 549384
+2019-10-14 17:51:22,795 - INFO - 293 : child memory usage 84632
+2019-10-14 17:51:22,796 - INFO - 293 : cpu time 14.50449
+2019-10-14 17:51:22,796 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:51:32,803 - INFO - 293 : memory usage 549384
+2019-10-14 17:51:32,803 - INFO - 293 : child memory usage 84632
+2019-10-14 17:51:32,804 - INFO - 293 : cpu time 14.559004
+2019-10-14 17:51:32,804 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:51:42,805 - INFO - 293 : memory usage 549384
+2019-10-14 17:51:42,806 - INFO - 293 : child memory usage 84632
+2019-10-14 17:51:42,807 - INFO - 293 : cpu time 14.613694
+2019-10-14 17:51:42,807 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:51:52,814 - INFO - 293 : memory usage 549384
+2019-10-14 17:51:52,815 - INFO - 293 : child memory usage 84632
+2019-10-14 17:51:52,816 - INFO - 293 : cpu time 14.67237
+2019-10-14 17:51:52,816 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:52:02,823 - INFO - 293 : memory usage 549384
+2019-10-14 17:52:02,823 - INFO - 293 : child memory usage 84632
+2019-10-14 17:52:02,824 - INFO - 293 : cpu time 14.720365
+2019-10-14 17:52:02,825 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:52:12,825 - INFO - 293 : memory usage 549384
+2019-10-14 17:52:12,826 - INFO - 293 : child memory usage 84632
+2019-10-14 17:52:12,827 - INFO - 293 : cpu time 14.771558
+2019-10-14 17:52:12,827 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:52:22,834 - INFO - 293 : memory usage 549384
+2019-10-14 17:52:22,835 - INFO - 293 : child memory usage 84632
+2019-10-14 17:52:22,835 - INFO - 293 : cpu time 14.823733
+2019-10-14 17:52:22,836 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:52:32,837 - INFO - 293 : memory usage 549384
+2019-10-14 17:52:32,837 - INFO - 293 : child memory usage 84632
+2019-10-14 17:52:32,838 - INFO - 293 : cpu time 14.881852
+2019-10-14 17:52:32,839 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:52:42,846 - INFO - 293 : memory usage 549384
+2019-10-14 17:52:42,847 - INFO - 293 : child memory usage 84632
+2019-10-14 17:52:42,854 - INFO - 293 : cpu time 14.931953
+2019-10-14 17:52:42,854 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:52:52,855 - INFO - 293 : memory usage 549384
+2019-10-14 17:52:52,856 - INFO - 293 : child memory usage 84632
+2019-10-14 17:52:52,857 - INFO - 293 : cpu time 14.971561
+2019-10-14 17:52:52,857 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:53:02,864 - INFO - 293 : memory usage 549384
+2019-10-14 17:53:02,865 - INFO - 293 : child memory usage 84632
+2019-10-14 17:53:02,866 - INFO - 293 : cpu time 15.006457
+2019-10-14 17:53:02,866 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:53:12,873 - INFO - 293 : memory usage 549384
+2019-10-14 17:53:12,874 - INFO - 293 : child memory usage 84632
+2019-10-14 17:53:12,875 - INFO - 293 : cpu time 15.058576
+2019-10-14 17:53:12,875 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:53:22,882 - INFO - 293 : memory usage 549384
+2019-10-14 17:53:22,883 - INFO - 293 : child memory usage 84632
+2019-10-14 17:53:22,884 - INFO - 293 : cpu time 15.113563
+2019-10-14 17:53:22,884 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:53:32,885 - INFO - 293 : memory usage 549384
+2019-10-14 17:53:32,886 - INFO - 293 : child memory usage 84632
+2019-10-14 17:53:32,886 - INFO - 293 : cpu time 15.166846
+2019-10-14 17:53:32,887 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:53:42,888 - INFO - 293 : memory usage 549384
+2019-10-14 17:53:42,888 - INFO - 293 : child memory usage 84632
+2019-10-14 17:53:42,889 - INFO - 293 : cpu time 15.216335
+2019-10-14 17:53:42,890 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:53:52,896 - INFO - 293 : memory usage 549384
+2019-10-14 17:53:52,897 - INFO - 293 : child memory usage 84632
+2019-10-14 17:53:52,898 - INFO - 293 : cpu time 15.271343
+2019-10-14 17:53:52,898 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:54:02,899 - INFO - 293 : memory usage 549384
+2019-10-14 17:54:02,900 - INFO - 293 : child memory usage 84632
+2019-10-14 17:54:02,900 - INFO - 293 : cpu time 15.327838
+2019-10-14 17:54:02,900 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:54:12,907 - INFO - 293 : memory usage 549384
+2019-10-14 17:54:12,908 - INFO - 293 : child memory usage 84632
+2019-10-14 17:54:12,909 - INFO - 293 : cpu time 15.378998
+2019-10-14 17:54:12,909 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:54:22,916 - INFO - 293 : memory usage 549384
+2019-10-14 17:54:22,917 - INFO - 293 : child memory usage 84632
+2019-10-14 17:54:22,918 - INFO - 293 : cpu time 15.435288
+2019-10-14 17:54:22,918 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:54:32,919 - INFO - 293 : memory usage 549384
+2019-10-14 17:54:32,920 - INFO - 293 : child memory usage 84632
+2019-10-14 17:54:32,920 - INFO - 293 : cpu time 15.475242
+2019-10-14 17:54:32,921 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:54:42,921 - INFO - 293 : memory usage 549384
+2019-10-14 17:54:42,922 - INFO - 293 : child memory usage 84632
+2019-10-14 17:54:42,923 - INFO - 293 : cpu time 15.534217
+2019-10-14 17:54:42,923 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:54:52,924 - INFO - 293 : memory usage 549384
+2019-10-14 17:54:52,925 - INFO - 293 : child memory usage 84632
+2019-10-14 17:54:52,926 - INFO - 293 : cpu time 15.588994
+2019-10-14 17:54:52,926 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:55:02,933 - INFO - 293 : memory usage 549384
+2019-10-14 17:55:02,933 - INFO - 293 : child memory usage 84632
+2019-10-14 17:55:02,934 - INFO - 293 : cpu time 15.636345
+2019-10-14 17:55:02,935 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:55:12,941 - INFO - 293 : memory usage 549384
+2019-10-14 17:55:12,942 - INFO - 293 : child memory usage 84632
+2019-10-14 17:55:12,943 - INFO - 293 : cpu time 15.689542
+2019-10-14 17:55:12,943 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:55:22,944 - INFO - 293 : memory usage 549384
+2019-10-14 17:55:22,945 - INFO - 293 : child memory usage 84632
+2019-10-14 17:55:22,946 - INFO - 293 : cpu time 15.746824
+2019-10-14 17:55:22,946 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:55:32,954 - INFO - 293 : memory usage 549384
+2019-10-14 17:55:32,954 - INFO - 293 : child memory usage 84632
+2019-10-14 17:55:32,955 - INFO - 293 : cpu time 15.796327999999999
+2019-10-14 17:55:32,956 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:55:42,963 - INFO - 293 : memory usage 549384
+2019-10-14 17:55:42,963 - INFO - 293 : child memory usage 84632
+2019-10-14 17:55:42,964 - INFO - 293 : cpu time 15.852901
+2019-10-14 17:55:42,964 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:55:52,972 - INFO - 293 : memory usage 549384
+2019-10-14 17:55:52,972 - INFO - 293 : child memory usage 84632
+2019-10-14 17:55:52,973 - INFO - 293 : cpu time 15.901912
+2019-10-14 17:55:52,973 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:56:02,974 - INFO - 293 : memory usage 549384
+2019-10-14 17:56:02,975 - INFO - 293 : child memory usage 84632
+2019-10-14 17:56:02,976 - INFO - 293 : cpu time 15.957106
+2019-10-14 17:56:02,976 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:56:12,983 - INFO - 293 : memory usage 549384
+2019-10-14 17:56:12,983 - INFO - 293 : child memory usage 84632
+2019-10-14 17:56:12,984 - INFO - 293 : cpu time 16.014973
+2019-10-14 17:56:12,985 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:56:22,985 - INFO - 293 : memory usage 549384
+2019-10-14 17:56:22,986 - INFO - 293 : child memory usage 84632
+2019-10-14 17:56:22,987 - INFO - 293 : cpu time 16.068421
+2019-10-14 17:56:22,987 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:56:32,994 - INFO - 293 : memory usage 549384
+2019-10-14 17:56:32,995 - INFO - 293 : child memory usage 84632
+2019-10-14 17:56:32,995 - INFO - 293 : cpu time 16.122453
+2019-10-14 17:56:32,996 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:56:43,003 - INFO - 293 : memory usage 549384
+2019-10-14 17:56:43,003 - INFO - 293 : child memory usage 84632
+2019-10-14 17:56:43,004 - INFO - 293 : cpu time 16.165883
+2019-10-14 17:56:43,005 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:56:53,011 - INFO - 293 : memory usage 549384
+2019-10-14 17:56:53,012 - INFO - 293 : child memory usage 84632
+2019-10-14 17:56:53,013 - INFO - 293 : cpu time 16.222189
+2019-10-14 17:56:53,013 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:57:03,020 - INFO - 293 : memory usage 549384
+2019-10-14 17:57:03,021 - INFO - 293 : child memory usage 84632
+2019-10-14 17:57:03,022 - INFO - 293 : cpu time 16.277175
+2019-10-14 17:57:03,022 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:57:13,029 - INFO - 293 : memory usage 549440
+2019-10-14 17:57:13,030 - INFO - 293 : child memory usage 84632
+2019-10-14 17:57:13,031 - INFO - 293 : cpu time 16.416418
+2019-10-14 17:57:13,031 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:57:23,032 - INFO - 293 : memory usage 551176
+2019-10-14 17:57:23,033 - INFO - 293 : child memory usage 84632
+2019-10-14 17:57:23,034 - INFO - 293 : cpu time 16.485178
+2019-10-14 17:57:23,035 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:57:33,036 - INFO - 293 : memory usage 552128
+2019-10-14 17:57:33,036 - INFO - 293 : child memory usage 84632
+2019-10-14 17:57:33,037 - INFO - 293 : cpu time 16.559017
+2019-10-14 17:57:33,037 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:57:43,044 - INFO - 293 : memory usage 553076
+2019-10-14 17:57:43,045 - INFO - 293 : child memory usage 84632
+2019-10-14 17:57:43,046 - INFO - 293 : cpu time 16.629669
+2019-10-14 17:57:43,053 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:57:53,054 - INFO - 293 : memory usage 554024
+2019-10-14 17:57:53,055 - INFO - 293 : child memory usage 84632
+2019-10-14 17:57:53,055 - INFO - 293 : cpu time 16.692936
+2019-10-14 17:57:53,056 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:58:03,063 - INFO - 293 : memory usage 554980
+2019-10-14 17:58:03,064 - INFO - 293 : child memory usage 84632
+2019-10-14 17:58:03,065 - INFO - 293 : cpu time 16.765027
+2019-10-14 17:58:03,065 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:58:13,073 - INFO - 293 : memory usage 555928
+2019-10-14 17:58:13,074 - INFO - 293 : child memory usage 84632
+2019-10-14 17:58:13,075 - INFO - 293 : cpu time 16.829973
+2019-10-14 17:58:13,075 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:58:23,076 - INFO - 293 : memory usage 558916
+2019-10-14 17:58:23,077 - INFO - 293 : child memory usage 84632
+2019-10-14 17:58:23,078 - INFO - 293 : cpu time 16.903434
+2019-10-14 17:58:23,078 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:58:33,079 - INFO - 293 : memory usage 559724
+2019-10-14 17:58:33,080 - INFO - 293 : child memory usage 84632
+2019-10-14 17:58:33,081 - INFO - 293 : cpu time 16.977995
+2019-10-14 17:58:33,081 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:58:43,082 - INFO - 293 : memory usage 559724
+2019-10-14 17:58:43,083 - INFO - 293 : child memory usage 84632
+2019-10-14 17:58:43,084 - INFO - 293 : cpu time 17.052043
+2019-10-14 17:58:43,084 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:58:53,085 - INFO - 293 : memory usage 560504
+2019-10-14 17:58:53,086 - INFO - 293 : child memory usage 84632
+2019-10-14 17:58:53,087 - INFO - 293 : cpu time 17.143953
+2019-10-14 17:58:53,087 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:59:03,095 - INFO - 293 : memory usage 561492
+2019-10-14 17:59:03,095 - INFO - 293 : child memory usage 84632
+2019-10-14 17:59:03,096 - INFO - 293 : cpu time 17.220193
+2019-10-14 17:59:03,097 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:59:13,103 - INFO - 293 : memory usage 562432
+2019-10-14 17:59:13,104 - INFO - 293 : child memory usage 84632
+2019-10-14 17:59:13,105 - INFO - 293 : cpu time 17.280683
+2019-10-14 17:59:13,105 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:59:23,107 - INFO - 293 : memory usage 565584
+2019-10-14 17:59:23,107 - INFO - 293 : child memory usage 84632
+2019-10-14 17:59:23,108 - INFO - 293 : cpu time 17.357586
+2019-10-14 17:59:23,109 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:59:33,116 - INFO - 293 : memory usage 566396
+2019-10-14 17:59:33,117 - INFO - 293 : child memory usage 84632
+2019-10-14 17:59:33,117 - INFO - 293 : cpu time 17.430817
+2019-10-14 17:59:33,118 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:59:43,119 - INFO - 293 : memory usage 566396
+2019-10-14 17:59:43,119 - INFO - 293 : child memory usage 84632
+2019-10-14 17:59:43,120 - INFO - 293 : cpu time 17.500965
+2019-10-14 17:59:43,120 - INFO - 293 : child cpu time 0.069129
+2019-10-14 17:59:53,121 - INFO - 293 : memory usage 566396
+2019-10-14 17:59:53,122 - INFO - 293 : child memory usage 84632
+2019-10-14 17:59:53,123 - INFO - 293 : cpu time 17.572206
+2019-10-14 17:59:53,123 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:00:03,131 - INFO - 293 : memory usage 567332
+2019-10-14 18:00:03,132 - INFO - 293 : child memory usage 84632
+2019-10-14 18:00:03,133 - INFO - 293 : cpu time 17.646031999999998
+2019-10-14 18:00:03,133 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:00:13,134 - INFO - 293 : memory usage 568272
+2019-10-14 18:00:13,135 - INFO - 293 : child memory usage 84632
+2019-10-14 18:00:13,135 - INFO - 293 : cpu time 17.706596
+2019-10-14 18:00:13,136 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:00:23,142 - INFO - 293 : memory usage 568312
+2019-10-14 18:00:23,143 - INFO - 293 : child memory usage 84632
+2019-10-14 18:00:23,144 - INFO - 293 : cpu time 17.784457
+2019-10-14 18:00:23,144 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:00:33,151 - INFO - 293 : memory usage 568320
+2019-10-14 18:00:33,152 - INFO - 293 : child memory usage 84632
+2019-10-14 18:00:33,152 - INFO - 293 : cpu time 17.851977
+2019-10-14 18:00:33,153 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:00:43,154 - INFO - 293 : memory usage 568436
+2019-10-14 18:00:43,155 - INFO - 293 : child memory usage 84632
+2019-10-14 18:00:43,155 - INFO - 293 : cpu time 17.945417
+2019-10-14 18:00:43,156 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:00:53,157 - INFO - 293 : memory usage 568440
+2019-10-14 18:00:53,157 - INFO - 293 : child memory usage 84632
+2019-10-14 18:00:53,158 - INFO - 293 : cpu time 18.020951
+2019-10-14 18:00:53,159 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:01:03,166 - INFO - 293 : memory usage 568440
+2019-10-14 18:01:03,166 - INFO - 293 : child memory usage 84632
+2019-10-14 18:01:03,167 - INFO - 293 : cpu time 18.087115
+2019-10-14 18:01:03,168 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:01:13,174 - INFO - 293 : memory usage 568440
+2019-10-14 18:01:13,175 - INFO - 293 : child memory usage 84632
+2019-10-14 18:01:13,176 - INFO - 293 : cpu time 18.150963
+2019-10-14 18:01:13,176 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:01:23,177 - INFO - 293 : memory usage 568440
+2019-10-14 18:01:23,178 - INFO - 293 : child memory usage 84632
+2019-10-14 18:01:23,179 - INFO - 293 : cpu time 18.220037
+2019-10-14 18:01:23,179 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:01:33,186 - INFO - 293 : memory usage 568440
+2019-10-14 18:01:33,187 - INFO - 293 : child memory usage 84632
+2019-10-14 18:01:33,187 - INFO - 293 : cpu time 18.284461
+2019-10-14 18:01:33,188 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:01:43,195 - INFO - 293 : memory usage 568440
+2019-10-14 18:01:43,195 - INFO - 293 : child memory usage 84632
+2019-10-14 18:01:43,196 - INFO - 293 : cpu time 18.346754
+2019-10-14 18:01:43,196 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:01:53,204 - INFO - 293 : memory usage 568440
+2019-10-14 18:01:53,205 - INFO - 293 : child memory usage 84632
+2019-10-14 18:01:53,206 - INFO - 293 : cpu time 18.418655
+2019-10-14 18:01:53,206 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:02:03,207 - INFO - 293 : memory usage 568440
+2019-10-14 18:02:03,208 - INFO - 293 : child memory usage 84632
+2019-10-14 18:02:03,208 - INFO - 293 : cpu time 18.491245
+2019-10-14 18:02:03,209 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:02:13,218 - INFO - 293 : memory usage 568440
+2019-10-14 18:02:13,218 - INFO - 293 : child memory usage 84632
+2019-10-14 18:02:13,219 - INFO - 293 : cpu time 18.569416
+2019-10-14 18:02:13,220 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:02:23,227 - INFO - 293 : memory usage 568440
+2019-10-14 18:02:23,228 - INFO - 293 : child memory usage 84632
+2019-10-14 18:02:23,229 - INFO - 293 : cpu time 18.647032
+2019-10-14 18:02:23,229 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:02:33,237 - INFO - 293 : memory usage 568440
+2019-10-14 18:02:33,238 - INFO - 293 : child memory usage 84632
+2019-10-14 18:02:33,239 - INFO - 293 : cpu time 18.724502
+2019-10-14 18:02:33,240 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:02:43,240 - INFO - 293 : memory usage 568440
+2019-10-14 18:02:43,241 - INFO - 293 : child memory usage 84632
+2019-10-14 18:02:43,242 - INFO - 293 : cpu time 18.820942
+2019-10-14 18:02:43,242 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:02:53,250 - INFO - 293 : memory usage 568440
+2019-10-14 18:02:53,250 - INFO - 293 : child memory usage 84632
+2019-10-14 18:02:53,251 - INFO - 293 : cpu time 18.890223
+2019-10-14 18:02:53,251 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:03:03,258 - INFO - 293 : memory usage 568440
+2019-10-14 18:03:03,259 - INFO - 293 : child memory usage 84632
+2019-10-14 18:03:03,260 - INFO - 293 : cpu time 18.952437
+2019-10-14 18:03:03,260 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:03:13,261 - INFO - 293 : memory usage 568448
+2019-10-14 18:03:13,262 - INFO - 293 : child memory usage 84632
+2019-10-14 18:03:13,263 - INFO - 293 : cpu time 19.030333
+2019-10-14 18:03:13,263 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:03:23,269 - INFO - 293 : memory usage 568448
+2019-10-14 18:03:23,270 - INFO - 293 : child memory usage 84632
+2019-10-14 18:03:23,271 - INFO - 293 : cpu time 19.078666
+2019-10-14 18:03:23,271 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:03:33,278 - INFO - 293 : memory usage 568472
+2019-10-14 18:03:33,279 - INFO - 293 : child memory usage 84632
+2019-10-14 18:03:33,286 - INFO - 293 : cpu time 19.115613
+2019-10-14 18:03:33,286 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:03:43,287 - INFO - 293 : memory usage 568472
+2019-10-14 18:03:43,287 - INFO - 293 : child memory usage 84632
+2019-10-14 18:03:43,288 - INFO - 293 : cpu time 19.1867
+2019-10-14 18:03:43,289 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:03:53,289 - INFO - 293 : memory usage 568472
+2019-10-14 18:03:53,290 - INFO - 293 : child memory usage 84632
+2019-10-14 18:03:53,291 - INFO - 293 : cpu time 19.250988
+2019-10-14 18:03:53,291 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:04:03,292 - INFO - 293 : memory usage 568472
+2019-10-14 18:04:03,293 - INFO - 293 : child memory usage 84632
+2019-10-14 18:04:03,301 - INFO - 293 : cpu time 19.315596
+2019-10-14 18:04:03,302 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:04:13,302 - INFO - 293 : memory usage 568472
+2019-10-14 18:04:13,303 - INFO - 293 : child memory usage 84632
+2019-10-14 18:04:13,304 - INFO - 293 : cpu time 19.383766
+2019-10-14 18:04:13,304 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:04:23,305 - INFO - 293 : memory usage 568472
+2019-10-14 18:04:23,306 - INFO - 293 : child memory usage 84632
+2019-10-14 18:04:23,306 - INFO - 293 : cpu time 19.459086
+2019-10-14 18:04:23,307 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:04:33,313 - INFO - 293 : memory usage 568472
+2019-10-14 18:04:33,314 - INFO - 293 : child memory usage 84632
+2019-10-14 18:04:33,315 - INFO - 293 : cpu time 19.555655
+2019-10-14 18:04:33,315 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:04:43,316 - INFO - 293 : memory usage 568472
+2019-10-14 18:04:43,317 - INFO - 293 : child memory usage 84632
+2019-10-14 18:04:43,317 - INFO - 293 : cpu time 19.627614
+2019-10-14 18:04:43,318 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:04:53,325 - INFO - 293 : memory usage 568472
+2019-10-14 18:04:53,326 - INFO - 293 : child memory usage 84632
+2019-10-14 18:04:53,327 - INFO - 293 : cpu time 19.703417
+2019-10-14 18:04:53,327 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:05:03,334 - INFO - 293 : memory usage 568472
+2019-10-14 18:05:03,335 - INFO - 293 : child memory usage 84632
+2019-10-14 18:05:03,335 - INFO - 293 : cpu time 19.779119
+2019-10-14 18:05:03,336 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:05:13,336 - INFO - 293 : memory usage 568472
+2019-10-14 18:05:13,337 - INFO - 293 : child memory usage 84632
+2019-10-14 18:05:13,338 - INFO - 293 : cpu time 19.851629
+2019-10-14 18:05:13,339 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:05:23,346 - INFO - 293 : memory usage 568472
+2019-10-14 18:05:23,347 - INFO - 293 : child memory usage 84632
+2019-10-14 18:05:23,347 - INFO - 293 : cpu time 19.92394
+2019-10-14 18:05:23,348 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:05:33,354 - INFO - 293 : memory usage 568472
+2019-10-14 18:05:33,355 - INFO - 293 : child memory usage 84632
+2019-10-14 18:05:33,356 - INFO - 293 : cpu time 19.994949
+2019-10-14 18:05:33,356 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:05:43,363 - INFO - 293 : memory usage 568472
+2019-10-14 18:05:43,364 - INFO - 293 : child memory usage 84632
+2019-10-14 18:05:43,365 - INFO - 293 : cpu time 20.064694
+2019-10-14 18:05:43,365 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:05:53,372 - INFO - 293 : memory usage 568472
+2019-10-14 18:05:53,373 - INFO - 293 : child memory usage 84632
+2019-10-14 18:05:53,374 - INFO - 293 : cpu time 20.136666
+2019-10-14 18:05:53,374 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:06:03,381 - INFO - 293 : memory usage 568472
+2019-10-14 18:06:03,382 - INFO - 293 : child memory usage 84632
+2019-10-14 18:06:03,383 - INFO - 293 : cpu time 20.206015
+2019-10-14 18:06:03,383 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:06:13,390 - INFO - 293 : memory usage 568472
+2019-10-14 18:06:13,390 - INFO - 293 : child memory usage 84632
+2019-10-14 18:06:13,391 - INFO - 293 : cpu time 20.273459
+2019-10-14 18:06:13,392 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:06:23,399 - INFO - 293 : memory usage 568472
+2019-10-14 18:06:23,400 - INFO - 293 : child memory usage 84632
+2019-10-14 18:06:23,400 - INFO - 293 : cpu time 20.346968
+2019-10-14 18:06:23,401 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:06:33,401 - INFO - 293 : memory usage 568472
+2019-10-14 18:06:33,402 - INFO - 293 : child memory usage 84632
+2019-10-14 18:06:33,403 - INFO - 293 : cpu time 20.424943
+2019-10-14 18:06:33,403 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:06:43,404 - INFO - 293 : memory usage 568472
+2019-10-14 18:06:43,405 - INFO - 293 : child memory usage 84632
+2019-10-14 18:06:43,406 - INFO - 293 : cpu time 20.499224
+2019-10-14 18:06:43,406 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:06:53,407 - INFO - 293 : memory usage 568472
+2019-10-14 18:06:53,408 - INFO - 293 : child memory usage 84632
+2019-10-14 18:06:53,409 - INFO - 293 : cpu time 20.576266
+2019-10-14 18:06:53,409 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:07:03,416 - INFO - 293 : memory usage 568472
+2019-10-14 18:07:03,417 - INFO - 293 : child memory usage 84632
+2019-10-14 18:07:03,418 - INFO - 293 : cpu time 20.651743
+2019-10-14 18:07:03,418 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:07:13,424 - INFO - 293 : memory usage 568472
+2019-10-14 18:07:13,425 - INFO - 293 : child memory usage 84632
+2019-10-14 18:07:13,426 - INFO - 293 : cpu time 20.718754
+2019-10-14 18:07:13,426 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:07:23,434 - INFO - 293 : memory usage 568472
+2019-10-14 18:07:23,435 - INFO - 293 : child memory usage 84632
+2019-10-14 18:07:23,436 - INFO - 293 : cpu time 20.794888
+2019-10-14 18:07:23,436 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:07:33,444 - INFO - 293 : memory usage 568472
+2019-10-14 18:07:33,444 - INFO - 293 : child memory usage 84632
+2019-10-14 18:07:33,445 - INFO - 293 : cpu time 20.865268
+2019-10-14 18:07:33,445 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:07:43,452 - INFO - 293 : memory usage 568472
+2019-10-14 18:07:43,453 - INFO - 293 : child memory usage 84632
+2019-10-14 18:07:43,454 - INFO - 293 : cpu time 20.973638
+2019-10-14 18:07:43,454 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:07:53,460 - INFO - 293 : memory usage 568472
+2019-10-14 18:07:53,461 - INFO - 293 : child memory usage 84632
+2019-10-14 18:07:53,462 - INFO - 293 : cpu time 21.082492
+2019-10-14 18:07:53,462 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:08:03,463 - INFO - 293 : memory usage 568472
+2019-10-14 18:08:03,464 - INFO - 293 : child memory usage 84632
+2019-10-14 18:08:03,465 - INFO - 293 : cpu time 21.173688
+2019-10-14 18:08:03,465 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:08:13,466 - INFO - 293 : memory usage 568472
+2019-10-14 18:08:13,466 - INFO - 293 : child memory usage 84632
+2019-10-14 18:08:13,467 - INFO - 293 : cpu time 21.239086
+2019-10-14 18:08:13,468 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:08:23,475 - INFO - 293 : memory usage 568472
+2019-10-14 18:08:23,476 - INFO - 293 : child memory usage 84632
+2019-10-14 18:08:23,476 - INFO - 293 : cpu time 21.313351
+2019-10-14 18:08:23,477 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:08:33,484 - INFO - 293 : memory usage 568472
+2019-10-14 18:08:33,484 - INFO - 293 : child memory usage 84632
+2019-10-14 18:08:33,485 - INFO - 293 : cpu time 21.374959
+2019-10-14 18:08:33,486 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:08:43,492 - INFO - 293 : memory usage 568472
+2019-10-14 18:08:43,493 - INFO - 293 : child memory usage 84632
+2019-10-14 18:08:43,494 - INFO - 293 : cpu time 21.443698
+2019-10-14 18:08:43,500 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:08:53,501 - INFO - 293 : memory usage 568472
+2019-10-14 18:08:53,502 - INFO - 293 : child memory usage 84632
+2019-10-14 18:08:53,502 - INFO - 293 : cpu time 21.51108
+2019-10-14 18:08:53,503 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:09:03,509 - INFO - 293 : memory usage 568472
+2019-10-14 18:09:03,510 - INFO - 293 : child memory usage 84632
+2019-10-14 18:09:03,511 - INFO - 293 : cpu time 21.579831
+2019-10-14 18:09:03,518 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:09:13,519 - INFO - 293 : memory usage 568472
+2019-10-14 18:09:13,519 - INFO - 293 : child memory usage 84632
+2019-10-14 18:09:13,520 - INFO - 293 : cpu time 21.653294
+2019-10-14 18:09:13,520 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:09:23,528 - INFO - 293 : memory usage 568472
+2019-10-14 18:09:23,528 - INFO - 293 : child memory usage 84632
+2019-10-14 18:09:23,529 - INFO - 293 : cpu time 21.713132
+2019-10-14 18:09:23,529 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:09:33,536 - INFO - 293 : memory usage 568472
+2019-10-14 18:09:33,537 - INFO - 293 : child memory usage 84632
+2019-10-14 18:09:33,538 - INFO - 293 : cpu time 21.788035999999998
+2019-10-14 18:09:33,538 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:09:43,539 - INFO - 293 : memory usage 568472
+2019-10-14 18:09:43,539 - INFO - 293 : child memory usage 84632
+2019-10-14 18:09:43,540 - INFO - 293 : cpu time 21.856594
+2019-10-14 18:09:43,540 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:09:53,547 - INFO - 293 : memory usage 568472
+2019-10-14 18:09:53,548 - INFO - 293 : child memory usage 84632
+2019-10-14 18:09:53,549 - INFO - 293 : cpu time 21.931038
+2019-10-14 18:09:53,555 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:10:03,556 - INFO - 293 : memory usage 568472
+2019-10-14 18:10:03,557 - INFO - 293 : child memory usage 84632
+2019-10-14 18:10:03,558 - INFO - 293 : cpu time 22.004873
+2019-10-14 18:10:03,558 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:10:13,565 - INFO - 293 : memory usage 568472
+2019-10-14 18:10:13,566 - INFO - 293 : child memory usage 84632
+2019-10-14 18:10:13,567 - INFO - 293 : cpu time 22.06926
+2019-10-14 18:10:13,567 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:10:23,574 - INFO - 293 : memory usage 568472
+2019-10-14 18:10:23,575 - INFO - 293 : child memory usage 84632
+2019-10-14 18:10:23,576 - INFO - 293 : cpu time 22.135662
+2019-10-14 18:10:23,576 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:10:33,577 - INFO - 293 : memory usage 568472
+2019-10-14 18:10:33,578 - INFO - 293 : child memory usage 84632
+2019-10-14 18:10:33,579 - INFO - 293 : cpu time 22.216782
+2019-10-14 18:10:33,579 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:10:43,580 - INFO - 293 : memory usage 568472
+2019-10-14 18:10:43,581 - INFO - 293 : child memory usage 84632
+2019-10-14 18:10:43,582 - INFO - 293 : cpu time 22.277172
+2019-10-14 18:10:43,582 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:10:53,589 - INFO - 293 : memory usage 568472
+2019-10-14 18:10:53,589 - INFO - 293 : child memory usage 84632
+2019-10-14 18:10:53,590 - INFO - 293 : cpu time 22.345551
+2019-10-14 18:10:53,591 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:11:03,597 - INFO - 293 : memory usage 568472
+2019-10-14 18:11:03,598 - INFO - 293 : child memory usage 84632
+2019-10-14 18:11:03,598 - INFO - 293 : cpu time 22.417604
+2019-10-14 18:11:03,599 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:11:13,607 - INFO - 293 : memory usage 568472
+2019-10-14 18:11:13,608 - INFO - 293 : child memory usage 84632
+2019-10-14 18:11:13,608 - INFO - 293 : cpu time 22.486922
+2019-10-14 18:11:13,609 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:11:23,610 - INFO - 293 : memory usage 568472
+2019-10-14 18:11:23,611 - INFO - 293 : child memory usage 84632
+2019-10-14 18:11:23,612 - INFO - 293 : cpu time 22.583015
+2019-10-14 18:11:23,612 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:11:33,613 - INFO - 293 : memory usage 568660
+2019-10-14 18:11:33,614 - INFO - 293 : child memory usage 84632
+2019-10-14 18:11:33,615 - INFO - 293 : cpu time 22.643857
+2019-10-14 18:11:33,615 - INFO - 293 : child cpu time 0.069129
+2019-10-14 18:11:33,885 - INFO - 293 : Stopping usage telemetry collection
+2019-10-14 18:49:23,009 - INFO - 293 : Starting usage telemetry collection
+2019-10-14 18:49:24,346 - INFO - 293 : Package azureml-train-automl missing from dependencies file.
+2019-10-14 18:49:24,366 - INFO - 293 : Using installed version: azureml-train-automl==1.0.65
+2019-10-14 18:49:24,374 - INFO - 293 : Package azureml-explain-model missing from dependencies file.
+2019-10-14 18:49:24,381 - INFO - 293 : Using installed version: azureml-explain-model==1.0.65
+2019-10-14 18:49:24,426 - INFO - 293 : Package azureml-dataprep missing from dependencies file.
+2019-10-14 18:49:24,442 - INFO - 293 : Using installed version: azureml-dataprep==1.1.19
+2019-10-14 18:49:24,449 - INFO - 293 : Package pytorch missing from dependencies file.
+2019-10-14 18:49:24,455 - INFO - 293 : Using pinned version: pytorch=1.1.0
+2019-10-14 18:49:24,461 - INFO - 293 : Package cudatoolkit missing from dependencies file.
+2019-10-14 18:49:24,467 - INFO - 293 : Using pinned version: cudatoolkit=9.0
+2019-10-14 18:49:24,473 - INFO - 293 : Package pytorch-transformers missing from dependencies file.
+2019-10-14 18:49:24,480 - INFO - 293 : Using pinned version: pytorch-transformers==1.0.0
+2019-10-14 18:49:24,488 - INFO - 293 : Package inference-schema missing from dependencies file.
+2019-10-14 18:49:24,494 - INFO - 293 : Package fbprophet missing from dependencies file.
+2019-10-14 18:49:24,501 - INFO - 293 : Package spacy missing from dependencies file.
+2019-10-14 18:49:24,531 - INFO - 293 : Using pinned version: spacy==2.1.8
+2019-10-14 18:49:24,537 - INFO - 293 : Package https://aka.ms/automl-resources/packages/en_core_web_sm-2.1.0.tar.gz missing from dependencies file.
+2019-10-14 18:49:24,820 - INFO - 293 : Validation service found the data has no errors.
+2019-10-14 18:49:24,849 - INFO - 293 : Start creating parent run with DTO:  - name: automl-classification-ccard
+ - subscription_id: be564fde-136b-4709-b7b6-abfc0bdfc134
+ - region: centralus
+ - spark_context: None
+ - spark_service: None
+ - azure_service: None
+ - iterations: 10
+ - primary_metric: average_precision_score_weighted
+ - task_type: classification
+ - validation_size: 0.0
+ - n_cross_validations: 5
+ - y_min: None
+ - y_max: None
+ - num_classes: None
+ - featurization: off
+ - preprocess: True
+ - lag_length: 0
+ - is_timeseries: False
+ - max_cores_per_iteration: 1
+ - max_concurrent_iterations: 5
+ - iteration_timeout_minutes: 5
+ - mem_in_mb: None
+ - enforce_time_on_windows: False
+ - experiment_timeout_minutes: None
+ - experiment_exit_score: None
+ - whitelist_models: None
+ - blacklist_algos: ['XGBoostClassifier', 'XGBoostClassifier']
+ - supported_models: ['LogisticRegression', 'SGD', 'MultinomialNaiveBayes', 'BernoulliNaiveBayes', 'SVM', 'LinearSVM', 'KNN', 'DecisionTree', 'RandomForest', 'ExtremeRandomTrees', 'LightGBM', 'XGBoostClassifier', 'NimbusMLAveragedPerceptronClassifier', 'NimbusMLLinearSVMClassifier', 'GradientBoosting', 'TensorFlowDNN', 'TensorFlowLinearClassifier']
+ - auto_blacklist: True
+ - blacklist_samples_reached: False
+ - exclude_nan_labels: True
+ - verbosity: 20
+ - show_warnings: False
+ - model_explainability: False
+ - service_url: None
+ - sdk_url: None
+ - sdk_packages: None
+ - enable_onnx_compatible_models: False
+ - enable_feature_sweeping: True
+ - vm_type: STANDARD_D2_V2
+ - telemetry_verbosity: INFO
+ - send_telemetry: True
+ - enable_early_stopping: False
+ - early_stopping_n_iters: 10
+ - metrics: None
+ - enable_ensembling: True
+ - enable_stack_ensembling: True
+ - ensemble_iterations: 10
+ - enable_tf: False
+ - enable_cache: True
+ - enable_subsampling: False
+ - subsample_seed: None
+ - enable_nimbusml: False
+ - enable_streaming: False
+ - label_column_name: Class
+ - weight_column_name: None
+ - cost_mode: 0
+ - metric_operation: maximize.
+2019-10-14 18:49:25,107 - INFO - 293 : [ParentRunID:AutoML_f506b554-4336-4e5f-999b-27b4ac198468] Remote run using input X and y.
+2019-10-14 18:49:25,662 - INFO - 293 : [RunId:AutoML_f506b554-4336-4e5f-999b-27b4ac198468]SDK dependencies versions:{"azureml-widgets": "1.0.65", "azureml-train": "1.0.65", "azureml-train-restclients-hyperdrive": "1.0.65", "azureml-train-core": "1.0.65", "azureml-train-automl": "1.0.65", "azureml-tensorboard": "1.0.65", "azureml-telemetry": "1.0.65", "azureml-sdk": "1.0.65", "azureml-pipeline": "1.0.65", "azureml-pipeline-steps": "1.0.65", "azureml-pipeline-core": "1.0.65", "azureml-opendatasets": "1.0.65", "azureml-explain-model": "1.0.65", "azureml-dataprep": "1.1.19", "azureml-dataprep-native": "13.0.3", "azureml-core": "1.0.65", "azureml-contrib-services": "1.0.65", "azureml-contrib-server": "1.0.65", "azureml-contrib-reinforcementlearning": "0.1.0.5524756", "azureml-contrib-opendatasets": "1.0.45", "azureml-contrib-notebook": "1.0.65", "azureml-contrib-explain-model": "1.0.65", "azureml-contrib-datadrift": "1.0.65", "azureml-automl-core": "1.0.65"}.
+2019-10-14 18:49:25,761 - INFO - 293 : Parent Run ID: AutoML_f506b554-4336-4e5f-999b-27b4ac198468
+2019-10-14 18:49:25,761 - INFO - 293 : Snapshotted folder: None with snapshot_id: 
+2019-10-14 18:49:25,762 - INFO - 293 : Starting a snapshot run (snapshotId : )
+2019-10-14 18:49:33,068 - INFO - 293 : memory usage 549216
+2019-10-14 18:49:33,069 - INFO - 293 : child memory usage 84548
+2019-10-14 18:49:33,069 - INFO - 293 : cpu time 5.991235
+2019-10-14 18:49:33,070 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:49:43,076 - INFO - 293 : memory usage 549248
+2019-10-14 18:49:43,077 - INFO - 293 : child memory usage 84548
+2019-10-14 18:49:43,078 - INFO - 293 : cpu time 6.046015
+2019-10-14 18:49:43,078 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:49:53,079 - INFO - 293 : memory usage 549280
+2019-10-14 18:49:53,080 - INFO - 293 : child memory usage 84548
+2019-10-14 18:49:53,081 - INFO - 293 : cpu time 6.095591
+2019-10-14 18:49:53,081 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:50:03,082 - INFO - 293 : memory usage 549280
+2019-10-14 18:50:03,083 - INFO - 293 : child memory usage 84548
+2019-10-14 18:50:03,084 - INFO - 293 : cpu time 6.152294
+2019-10-14 18:50:03,084 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:50:13,085 - INFO - 293 : memory usage 549388
+2019-10-14 18:50:13,086 - INFO - 293 : child memory usage 84548
+2019-10-14 18:50:13,086 - INFO - 293 : cpu time 6.208271
+2019-10-14 18:50:13,087 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:50:23,093 - INFO - 293 : memory usage 549392
+2019-10-14 18:50:23,094 - INFO - 293 : child memory usage 84548
+2019-10-14 18:50:23,095 - INFO - 293 : cpu time 6.257549
+2019-10-14 18:50:23,095 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:50:33,102 - INFO - 293 : memory usage 549392
+2019-10-14 18:50:33,103 - INFO - 293 : child memory usage 84548
+2019-10-14 18:50:33,104 - INFO - 293 : cpu time 6.313136
+2019-10-14 18:50:33,104 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:50:43,111 - INFO - 293 : memory usage 549392
+2019-10-14 18:50:43,112 - INFO - 293 : child memory usage 84548
+2019-10-14 18:50:43,113 - INFO - 293 : cpu time 6.36628
+2019-10-14 18:50:43,113 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:50:53,120 - INFO - 293 : memory usage 549392
+2019-10-14 18:50:53,121 - INFO - 293 : child memory usage 84548
+2019-10-14 18:50:53,122 - INFO - 293 : cpu time 6.423431
+2019-10-14 18:50:53,122 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:51:03,129 - INFO - 293 : memory usage 549392
+2019-10-14 18:51:03,130 - INFO - 293 : child memory usage 84548
+2019-10-14 18:51:03,131 - INFO - 293 : cpu time 6.478436
+2019-10-14 18:51:03,131 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:51:13,139 - INFO - 293 : memory usage 549392
+2019-10-14 18:51:13,140 - INFO - 293 : child memory usage 84548
+2019-10-14 18:51:13,141 - INFO - 293 : cpu time 6.5351289999999995
+2019-10-14 18:51:13,141 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:51:23,143 - INFO - 293 : memory usage 549392
+2019-10-14 18:51:23,143 - INFO - 293 : child memory usage 84548
+2019-10-14 18:51:23,144 - INFO - 293 : cpu time 6.586952
+2019-10-14 18:51:23,145 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:51:33,146 - INFO - 293 : memory usage 549392
+2019-10-14 18:51:33,147 - INFO - 293 : child memory usage 84548
+2019-10-14 18:51:33,147 - INFO - 293 : cpu time 6.638382
+2019-10-14 18:51:33,148 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:51:43,155 - INFO - 293 : memory usage 549392
+2019-10-14 18:51:43,156 - INFO - 293 : child memory usage 84548
+2019-10-14 18:51:43,157 - INFO - 293 : cpu time 6.695904
+2019-10-14 18:51:43,157 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:51:53,165 - INFO - 293 : memory usage 549392
+2019-10-14 18:51:53,166 - INFO - 293 : child memory usage 84548
+2019-10-14 18:51:53,167 - INFO - 293 : cpu time 6.748292
+2019-10-14 18:51:53,167 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:52:03,174 - INFO - 293 : memory usage 549392
+2019-10-14 18:52:03,175 - INFO - 293 : child memory usage 84548
+2019-10-14 18:52:03,176 - INFO - 293 : cpu time 6.7978179999999995
+2019-10-14 18:52:03,176 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:52:13,183 - INFO - 293 : memory usage 549392
+2019-10-14 18:52:13,184 - INFO - 293 : child memory usage 84548
+2019-10-14 18:52:13,185 - INFO - 293 : cpu time 6.854871
+2019-10-14 18:52:13,185 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:52:23,193 - INFO - 293 : memory usage 549392
+2019-10-14 18:52:23,194 - INFO - 293 : child memory usage 84548
+2019-10-14 18:52:23,195 - INFO - 293 : cpu time 6.909193
+2019-10-14 18:52:23,195 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:52:33,196 - INFO - 293 : memory usage 549392
+2019-10-14 18:52:33,196 - INFO - 293 : child memory usage 84548
+2019-10-14 18:52:33,197 - INFO - 293 : cpu time 6.962881
+2019-10-14 18:52:33,198 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:52:43,205 - INFO - 293 : memory usage 549392
+2019-10-14 18:52:43,206 - INFO - 293 : child memory usage 84548
+2019-10-14 18:52:43,207 - INFO - 293 : cpu time 7.020101
+2019-10-14 18:52:43,207 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:52:53,213 - INFO - 293 : memory usage 549392
+2019-10-14 18:52:53,214 - INFO - 293 : child memory usage 84548
+2019-10-14 18:52:53,215 - INFO - 293 : cpu time 7.078818
+2019-10-14 18:52:53,215 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:53:03,222 - INFO - 293 : memory usage 549392
+2019-10-14 18:53:03,223 - INFO - 293 : child memory usage 84548
+2019-10-14 18:53:03,224 - INFO - 293 : cpu time 7.134374
+2019-10-14 18:53:03,224 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:53:13,231 - INFO - 293 : memory usage 549392
+2019-10-14 18:53:13,232 - INFO - 293 : child memory usage 84548
+2019-10-14 18:53:13,233 - INFO - 293 : cpu time 7.19274
+2019-10-14 18:53:13,233 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:53:23,234 - INFO - 293 : memory usage 549392
+2019-10-14 18:53:23,235 - INFO - 293 : child memory usage 84548
+2019-10-14 18:53:23,235 - INFO - 293 : cpu time 7.25456
+2019-10-14 18:53:23,236 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:53:33,243 - INFO - 293 : memory usage 549392
+2019-10-14 18:53:33,244 - INFO - 293 : child memory usage 84548
+2019-10-14 18:53:33,244 - INFO - 293 : cpu time 7.305291
+2019-10-14 18:53:33,245 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:53:43,246 - INFO - 293 : memory usage 549392
+2019-10-14 18:53:43,246 - INFO - 293 : child memory usage 84548
+2019-10-14 18:53:43,247 - INFO - 293 : cpu time 7.353441
+2019-10-14 18:53:43,247 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:53:53,254 - INFO - 293 : memory usage 549392
+2019-10-14 18:53:53,255 - INFO - 293 : child memory usage 84548
+2019-10-14 18:53:53,256 - INFO - 293 : cpu time 7.411234
+2019-10-14 18:53:53,256 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:54:03,263 - INFO - 293 : memory usage 549392
+2019-10-14 18:54:03,264 - INFO - 293 : child memory usage 84548
+2019-10-14 18:54:03,265 - INFO - 293 : cpu time 7.46837
+2019-10-14 18:54:03,265 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:54:13,266 - INFO - 293 : memory usage 549392
+2019-10-14 18:54:13,267 - INFO - 293 : child memory usage 84548
+2019-10-14 18:54:13,268 - INFO - 293 : cpu time 7.524761
+2019-10-14 18:54:13,268 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:54:23,276 - INFO - 293 : memory usage 549392
+2019-10-14 18:54:23,276 - INFO - 293 : child memory usage 84548
+2019-10-14 18:54:23,277 - INFO - 293 : cpu time 7.58321
+2019-10-14 18:54:23,277 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:54:33,284 - INFO - 293 : memory usage 549392
+2019-10-14 18:54:33,285 - INFO - 293 : child memory usage 84548
+2019-10-14 18:54:33,286 - INFO - 293 : cpu time 7.638189
+2019-10-14 18:54:33,286 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:54:43,293 - INFO - 293 : memory usage 549392
+2019-10-14 18:54:43,294 - INFO - 293 : child memory usage 84548
+2019-10-14 18:54:43,295 - INFO - 293 : cpu time 7.6952110000000005
+2019-10-14 18:54:43,295 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:54:53,296 - INFO - 293 : memory usage 549396
+2019-10-14 18:54:53,296 - INFO - 293 : child memory usage 84548
+2019-10-14 18:54:53,297 - INFO - 293 : cpu time 7.74943
+2019-10-14 18:54:53,297 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:55:03,304 - INFO - 293 : memory usage 549400
+2019-10-14 18:55:03,305 - INFO - 293 : child memory usage 84548
+2019-10-14 18:55:03,306 - INFO - 293 : cpu time 7.806453
+2019-10-14 18:55:03,306 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:55:13,313 - INFO - 293 : memory usage 549400
+2019-10-14 18:55:13,314 - INFO - 293 : child memory usage 84548
+2019-10-14 18:55:13,315 - INFO - 293 : cpu time 7.865113
+2019-10-14 18:55:13,315 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:55:23,316 - INFO - 293 : memory usage 549416
+2019-10-14 18:55:23,317 - INFO - 293 : child memory usage 84548
+2019-10-14 18:55:23,318 - INFO - 293 : cpu time 7.9152439999999995
+2019-10-14 18:55:23,318 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:55:33,319 - INFO - 293 : memory usage 549472
+2019-10-14 18:55:33,320 - INFO - 293 : child memory usage 84548
+2019-10-14 18:55:33,320 - INFO - 293 : cpu time 7.9752469999999995
+2019-10-14 18:55:33,327 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:55:43,328 - INFO - 293 : memory usage 549476
+2019-10-14 18:55:43,328 - INFO - 293 : child memory usage 84548
+2019-10-14 18:55:43,329 - INFO - 293 : cpu time 8.02834
+2019-10-14 18:55:43,330 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:55:53,337 - INFO - 293 : memory usage 550228
+2019-10-14 18:55:53,337 - INFO - 293 : child memory usage 84548
+2019-10-14 18:55:53,338 - INFO - 293 : cpu time 8.084151
+2019-10-14 18:55:53,339 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:56:03,346 - INFO - 293 : memory usage 550228
+2019-10-14 18:56:03,347 - INFO - 293 : child memory usage 84548
+2019-10-14 18:56:03,347 - INFO - 293 : cpu time 8.142395
+2019-10-14 18:56:03,348 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:56:13,348 - INFO - 293 : memory usage 550228
+2019-10-14 18:56:13,349 - INFO - 293 : child memory usage 84548
+2019-10-14 18:56:13,350 - INFO - 293 : cpu time 8.198786
+2019-10-14 18:56:13,351 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:56:23,351 - INFO - 293 : memory usage 550228
+2019-10-14 18:56:23,352 - INFO - 293 : child memory usage 84548
+2019-10-14 18:56:23,353 - INFO - 293 : cpu time 8.256234
+2019-10-14 18:56:23,354 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:56:33,361 - INFO - 293 : memory usage 550228
+2019-10-14 18:56:33,362 - INFO - 293 : child memory usage 84548
+2019-10-14 18:56:33,362 - INFO - 293 : cpu time 8.311316
+2019-10-14 18:56:33,363 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:56:43,370 - INFO - 293 : memory usage 550228
+2019-10-14 18:56:43,371 - INFO - 293 : child memory usage 84548
+2019-10-14 18:56:43,372 - INFO - 293 : cpu time 8.366112
+2019-10-14 18:56:43,372 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:56:53,373 - INFO - 293 : memory usage 550228
+2019-10-14 18:56:53,374 - INFO - 293 : child memory usage 84548
+2019-10-14 18:56:53,375 - INFO - 293 : cpu time 8.42434
+2019-10-14 18:56:53,375 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:57:03,376 - INFO - 293 : memory usage 550228
+2019-10-14 18:57:03,376 - INFO - 293 : child memory usage 84548
+2019-10-14 18:57:03,377 - INFO - 293 : cpu time 8.47782
+2019-10-14 18:57:03,378 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:57:13,385 - INFO - 293 : memory usage 550228
+2019-10-14 18:57:13,386 - INFO - 293 : child memory usage 84548
+2019-10-14 18:57:13,386 - INFO - 293 : cpu time 8.535551
+2019-10-14 18:57:13,387 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:57:23,393 - INFO - 293 : memory usage 550228
+2019-10-14 18:57:23,394 - INFO - 293 : child memory usage 84548
+2019-10-14 18:57:23,395 - INFO - 293 : cpu time 8.585896
+2019-10-14 18:57:23,395 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:57:33,402 - INFO - 293 : memory usage 550228
+2019-10-14 18:57:33,403 - INFO - 293 : child memory usage 84548
+2019-10-14 18:57:33,403 - INFO - 293 : cpu time 8.644497
+2019-10-14 18:57:33,404 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:57:43,410 - INFO - 293 : memory usage 550228
+2019-10-14 18:57:43,411 - INFO - 293 : child memory usage 84548
+2019-10-14 18:57:43,412 - INFO - 293 : cpu time 8.698687
+2019-10-14 18:57:43,412 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:57:53,419 - INFO - 293 : memory usage 550228
+2019-10-14 18:57:53,420 - INFO - 293 : child memory usage 84548
+2019-10-14 18:57:53,421 - INFO - 293 : cpu time 8.7567
+2019-10-14 18:57:53,421 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:58:03,422 - INFO - 293 : memory usage 550228
+2019-10-14 18:58:03,422 - INFO - 293 : child memory usage 84548
+2019-10-14 18:58:03,423 - INFO - 293 : cpu time 8.817004
+2019-10-14 18:58:03,423 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:58:13,424 - INFO - 293 : memory usage 550228
+2019-10-14 18:58:13,425 - INFO - 293 : child memory usage 84548
+2019-10-14 18:58:13,426 - INFO - 293 : cpu time 8.877222
+2019-10-14 18:58:13,426 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:58:23,433 - INFO - 293 : memory usage 550228
+2019-10-14 18:58:23,434 - INFO - 293 : child memory usage 84548
+2019-10-14 18:58:23,434 - INFO - 293 : cpu time 8.931866
+2019-10-14 18:58:23,435 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:58:33,441 - INFO - 293 : memory usage 550228
+2019-10-14 18:58:33,442 - INFO - 293 : child memory usage 84548
+2019-10-14 18:58:33,443 - INFO - 293 : cpu time 8.963531
+2019-10-14 18:58:33,444 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:58:43,451 - INFO - 293 : memory usage 550228
+2019-10-14 18:58:43,452 - INFO - 293 : child memory usage 84548
+2019-10-14 18:58:43,453 - INFO - 293 : cpu time 9.012557
+2019-10-14 18:58:43,453 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:58:53,460 - INFO - 293 : memory usage 550228
+2019-10-14 18:58:53,461 - INFO - 293 : child memory usage 84548
+2019-10-14 18:58:53,462 - INFO - 293 : cpu time 9.070526
+2019-10-14 18:58:53,462 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:59:03,463 - INFO - 293 : memory usage 550228
+2019-10-14 18:59:03,464 - INFO - 293 : child memory usage 84548
+2019-10-14 18:59:03,464 - INFO - 293 : cpu time 9.131187
+2019-10-14 18:59:03,465 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:59:13,472 - INFO - 293 : memory usage 550228
+2019-10-14 18:59:13,473 - INFO - 293 : child memory usage 84548
+2019-10-14 18:59:13,473 - INFO - 293 : cpu time 9.191922
+2019-10-14 18:59:13,474 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:59:23,474 - INFO - 293 : memory usage 550228
+2019-10-14 18:59:23,475 - INFO - 293 : child memory usage 84548
+2019-10-14 18:59:23,476 - INFO - 293 : cpu time 9.249065
+2019-10-14 18:59:23,483 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:59:33,484 - INFO - 293 : memory usage 550228
+2019-10-14 18:59:33,485 - INFO - 293 : child memory usage 84548
+2019-10-14 18:59:33,486 - INFO - 293 : cpu time 9.305167
+2019-10-14 18:59:33,486 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:59:43,487 - INFO - 293 : memory usage 550228
+2019-10-14 18:59:43,487 - INFO - 293 : child memory usage 84548
+2019-10-14 18:59:43,488 - INFO - 293 : cpu time 9.359717
+2019-10-14 18:59:43,495 - INFO - 293 : child cpu time 0.071181
+2019-10-14 18:59:53,496 - INFO - 293 : memory usage 550228
+2019-10-14 18:59:53,496 - INFO - 293 : child memory usage 84548
+2019-10-14 18:59:53,497 - INFO - 293 : cpu time 9.413887
+2019-10-14 18:59:53,497 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:00:03,504 - INFO - 293 : memory usage 550228
+2019-10-14 19:00:03,505 - INFO - 293 : child memory usage 84548
+2019-10-14 19:00:03,505 - INFO - 293 : cpu time 9.466067
+2019-10-14 19:00:03,506 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:00:13,513 - INFO - 293 : memory usage 550228
+2019-10-14 19:00:13,513 - INFO - 293 : child memory usage 84548
+2019-10-14 19:00:13,514 - INFO - 293 : cpu time 9.522331
+2019-10-14 19:00:13,515 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:00:23,521 - INFO - 293 : memory usage 550228
+2019-10-14 19:00:23,522 - INFO - 293 : child memory usage 84548
+2019-10-14 19:00:23,523 - INFO - 293 : cpu time 9.57139
+2019-10-14 19:00:23,523 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:00:33,530 - INFO - 293 : memory usage 550228
+2019-10-14 19:00:33,531 - INFO - 293 : child memory usage 84548
+2019-10-14 19:00:33,532 - INFO - 293 : cpu time 9.625769
+2019-10-14 19:00:33,532 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:00:43,539 - INFO - 293 : memory usage 550228
+2019-10-14 19:00:43,540 - INFO - 293 : child memory usage 84548
+2019-10-14 19:00:43,541 - INFO - 293 : cpu time 9.684364
+2019-10-14 19:00:43,542 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:00:53,548 - INFO - 293 : memory usage 550228
+2019-10-14 19:00:53,549 - INFO - 293 : child memory usage 84548
+2019-10-14 19:00:53,550 - INFO - 293 : cpu time 9.734597
+2019-10-14 19:00:53,550 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:01:03,557 - INFO - 293 : memory usage 550228
+2019-10-14 19:01:03,558 - INFO - 293 : child memory usage 84548
+2019-10-14 19:01:03,559 - INFO - 293 : cpu time 9.779214
+2019-10-14 19:01:03,559 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:01:13,560 - INFO - 293 : memory usage 550228
+2019-10-14 19:01:13,560 - INFO - 293 : child memory usage 84548
+2019-10-14 19:01:13,561 - INFO - 293 : cpu time 9.832546
+2019-10-14 19:01:13,562 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:01:23,562 - INFO - 293 : memory usage 550228
+2019-10-14 19:01:23,563 - INFO - 293 : child memory usage 84548
+2019-10-14 19:01:23,564 - INFO - 293 : cpu time 9.885385
+2019-10-14 19:01:23,564 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:01:33,571 - INFO - 293 : memory usage 550228
+2019-10-14 19:01:33,572 - INFO - 293 : child memory usage 84548
+2019-10-14 19:01:33,573 - INFO - 293 : cpu time 9.939674
+2019-10-14 19:01:33,573 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:01:43,580 - INFO - 293 : memory usage 550228
+2019-10-14 19:01:43,581 - INFO - 293 : child memory usage 84548
+2019-10-14 19:01:43,582 - INFO - 293 : cpu time 9.992851
+2019-10-14 19:01:43,582 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:01:53,583 - INFO - 293 : memory usage 550228
+2019-10-14 19:01:53,584 - INFO - 293 : child memory usage 84548
+2019-10-14 19:01:53,591 - INFO - 293 : cpu time 10.047503
+2019-10-14 19:01:53,591 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:02:03,592 - INFO - 293 : memory usage 550228
+2019-10-14 19:02:03,593 - INFO - 293 : child memory usage 84548
+2019-10-14 19:02:03,594 - INFO - 293 : cpu time 10.200698
+2019-10-14 19:02:03,594 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:02:13,595 - INFO - 293 : memory usage 551208
+2019-10-14 19:02:13,596 - INFO - 293 : child memory usage 84548
+2019-10-14 19:02:13,596 - INFO - 293 : cpu time 10.2693
+2019-10-14 19:02:13,597 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:02:23,603 - INFO - 293 : memory usage 552160
+2019-10-14 19:02:23,604 - INFO - 293 : child memory usage 84548
+2019-10-14 19:02:23,605 - INFO - 293 : cpu time 10.338751
+2019-10-14 19:02:23,605 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:02:33,606 - INFO - 293 : memory usage 553108
+2019-10-14 19:02:33,607 - INFO - 293 : child memory usage 84548
+2019-10-14 19:02:33,608 - INFO - 293 : cpu time 10.415996
+2019-10-14 19:02:33,608 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:02:43,609 - INFO - 293 : memory usage 554056
+2019-10-14 19:02:43,610 - INFO - 293 : child memory usage 84548
+2019-10-14 19:02:43,611 - INFO - 293 : cpu time 10.495462
+2019-10-14 19:02:43,611 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:02:53,612 - INFO - 293 : memory usage 555004
+2019-10-14 19:02:53,613 - INFO - 293 : child memory usage 84548
+2019-10-14 19:02:53,614 - INFO - 293 : cpu time 10.558718
+2019-10-14 19:02:53,614 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:03:03,621 - INFO - 293 : memory usage 555952
+2019-10-14 19:03:03,622 - INFO - 293 : child memory usage 84548
+2019-10-14 19:03:03,623 - INFO - 293 : cpu time 10.635000999999999
+2019-10-14 19:03:03,623 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:03:13,625 - INFO - 293 : memory usage 558940
+2019-10-14 19:03:13,626 - INFO - 293 : child memory usage 84548
+2019-10-14 19:03:13,626 - INFO - 293 : cpu time 10.709431
+2019-10-14 19:03:13,627 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:03:23,634 - INFO - 293 : memory usage 559748
+2019-10-14 19:03:23,636 - INFO - 293 : child memory usage 84548
+2019-10-14 19:03:23,637 - INFO - 293 : cpu time 10.786154
+2019-10-14 19:03:23,637 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:03:33,638 - INFO - 293 : memory usage 559748
+2019-10-14 19:03:33,639 - INFO - 293 : child memory usage 84548
+2019-10-14 19:03:33,640 - INFO - 293 : cpu time 10.894816
+2019-10-14 19:03:33,640 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:03:43,647 - INFO - 293 : memory usage 560568
+2019-10-14 19:03:43,648 - INFO - 293 : child memory usage 84548
+2019-10-14 19:03:43,649 - INFO - 293 : cpu time 10.964433
+2019-10-14 19:03:43,649 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:03:53,657 - INFO - 293 : memory usage 561508
+2019-10-14 19:03:53,658 - INFO - 293 : child memory usage 84548
+2019-10-14 19:03:53,659 - INFO - 293 : cpu time 11.041632
+2019-10-14 19:03:53,659 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:04:03,660 - INFO - 293 : memory usage 562456
+2019-10-14 19:04:03,661 - INFO - 293 : child memory usage 84548
+2019-10-14 19:04:03,662 - INFO - 293 : cpu time 11.116707
+2019-10-14 19:04:03,662 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:04:13,663 - INFO - 293 : memory usage 565448
+2019-10-14 19:04:13,664 - INFO - 293 : child memory usage 84548
+2019-10-14 19:04:13,665 - INFO - 293 : cpu time 11.193618
+2019-10-14 19:04:13,665 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:04:23,666 - INFO - 293 : memory usage 566260
+2019-10-14 19:04:23,667 - INFO - 293 : child memory usage 84548
+2019-10-14 19:04:23,667 - INFO - 293 : cpu time 11.272259
+2019-10-14 19:04:23,668 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:04:33,675 - INFO - 293 : memory usage 566260
+2019-10-14 19:04:33,676 - INFO - 293 : child memory usage 84548
+2019-10-14 19:04:33,677 - INFO - 293 : cpu time 11.347672
+2019-10-14 19:04:33,677 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:04:43,678 - INFO - 293 : memory usage 566260
+2019-10-14 19:04:43,679 - INFO - 293 : child memory usage 84548
+2019-10-14 19:04:43,680 - INFO - 293 : cpu time 11.424855
+2019-10-14 19:04:43,680 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:04:53,681 - INFO - 293 : memory usage 567180
+2019-10-14 19:04:53,682 - INFO - 293 : child memory usage 84548
+2019-10-14 19:04:53,683 - INFO - 293 : cpu time 11.497294
+2019-10-14 19:04:53,683 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:05:03,692 - INFO - 293 : memory usage 568404
+2019-10-14 19:05:03,693 - INFO - 293 : child memory usage 84548
+2019-10-14 19:05:03,694 - INFO - 293 : cpu time 11.600075
+2019-10-14 19:05:03,694 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:05:13,701 - INFO - 293 : memory usage 568440
+2019-10-14 19:05:13,702 - INFO - 293 : child memory usage 84548
+2019-10-14 19:05:13,703 - INFO - 293 : cpu time 11.668242
+2019-10-14 19:05:13,703 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:05:23,710 - INFO - 293 : memory usage 568640
+2019-10-14 19:05:23,711 - INFO - 293 : child memory usage 84548
+2019-10-14 19:05:23,712 - INFO - 293 : cpu time 11.745953
+2019-10-14 19:05:23,712 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:05:33,713 - INFO - 293 : memory usage 568648
+2019-10-14 19:05:33,714 - INFO - 293 : child memory usage 84548
+2019-10-14 19:05:33,715 - INFO - 293 : cpu time 11.822599
+2019-10-14 19:05:33,715 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:05:43,716 - INFO - 293 : memory usage 568656
+2019-10-14 19:05:43,717 - INFO - 293 : child memory usage 84548
+2019-10-14 19:05:43,718 - INFO - 293 : cpu time 11.896669
+2019-10-14 19:05:43,718 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:05:53,719 - INFO - 293 : memory usage 568656
+2019-10-14 19:05:53,720 - INFO - 293 : child memory usage 84548
+2019-10-14 19:05:53,721 - INFO - 293 : cpu time 11.97639
+2019-10-14 19:05:53,727 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:06:03,728 - INFO - 293 : memory usage 568656
+2019-10-14 19:06:03,729 - INFO - 293 : child memory usage 84548
+2019-10-14 19:06:03,729 - INFO - 293 : cpu time 12.043145
+2019-10-14 19:06:03,736 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:06:13,737 - INFO - 293 : memory usage 568664
+2019-10-14 19:06:13,738 - INFO - 293 : child memory usage 84548
+2019-10-14 19:06:13,739 - INFO - 293 : cpu time 12.112183
+2019-10-14 19:06:13,739 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:06:23,740 - INFO - 293 : memory usage 568664
+2019-10-14 19:06:23,741 - INFO - 293 : child memory usage 84548
+2019-10-14 19:06:23,742 - INFO - 293 : cpu time 12.185641
+2019-10-14 19:06:23,742 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:06:33,749 - INFO - 293 : memory usage 568664
+2019-10-14 19:06:33,750 - INFO - 293 : child memory usage 84548
+2019-10-14 19:06:33,751 - INFO - 293 : cpu time 12.259396
+2019-10-14 19:06:33,751 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:06:43,759 - INFO - 293 : memory usage 568664
+2019-10-14 19:06:43,760 - INFO - 293 : child memory usage 84548
+2019-10-14 19:06:43,761 - INFO - 293 : cpu time 12.331625
+2019-10-14 19:06:43,761 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:06:53,768 - INFO - 293 : memory usage 568664
+2019-10-14 19:06:53,769 - INFO - 293 : child memory usage 84548
+2019-10-14 19:06:53,770 - INFO - 293 : cpu time 12.43025
+2019-10-14 19:06:53,770 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:07:03,771 - INFO - 293 : memory usage 568664
+2019-10-14 19:07:03,772 - INFO - 293 : child memory usage 84548
+2019-10-14 19:07:03,772 - INFO - 293 : cpu time 12.498245
+2019-10-14 19:07:03,773 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:07:13,774 - INFO - 293 : memory usage 568664
+2019-10-14 19:07:13,775 - INFO - 293 : child memory usage 84548
+2019-10-14 19:07:13,775 - INFO - 293 : cpu time 12.570722
+2019-10-14 19:07:13,776 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:07:23,783 - INFO - 293 : memory usage 568664
+2019-10-14 19:07:23,783 - INFO - 293 : child memory usage 84548
+2019-10-14 19:07:23,784 - INFO - 293 : cpu time 12.64838
+2019-10-14 19:07:23,785 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:07:33,785 - INFO - 293 : memory usage 568664
+2019-10-14 19:07:33,786 - INFO - 293 : child memory usage 84548
+2019-10-14 19:07:33,787 - INFO - 293 : cpu time 12.712787
+2019-10-14 19:07:33,787 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:07:43,794 - INFO - 293 : memory usage 568664
+2019-10-14 19:07:43,795 - INFO - 293 : child memory usage 84548
+2019-10-14 19:07:43,796 - INFO - 293 : cpu time 12.78708
+2019-10-14 19:07:43,796 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:07:53,797 - INFO - 293 : memory usage 568664
+2019-10-14 19:07:53,798 - INFO - 293 : child memory usage 84548
+2019-10-14 19:07:53,799 - INFO - 293 : cpu time 12.857354
+2019-10-14 19:07:53,799 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:08:03,800 - INFO - 293 : memory usage 568664
+2019-10-14 19:08:03,801 - INFO - 293 : child memory usage 84548
+2019-10-14 19:08:03,801 - INFO - 293 : cpu time 12.932434
+2019-10-14 19:08:03,802 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:08:13,809 - INFO - 293 : memory usage 568664
+2019-10-14 19:08:13,810 - INFO - 293 : child memory usage 84548
+2019-10-14 19:08:13,810 - INFO - 293 : cpu time 13.002975
+2019-10-14 19:08:13,811 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:08:23,812 - INFO - 293 : memory usage 568664
+2019-10-14 19:08:23,812 - INFO - 293 : child memory usage 84548
+2019-10-14 19:08:23,813 - INFO - 293 : cpu time 13.077838
+2019-10-14 19:08:23,814 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:08:33,821 - INFO - 293 : memory usage 568664
+2019-10-14 19:08:33,822 - INFO - 293 : child memory usage 84548
+2019-10-14 19:08:33,822 - INFO - 293 : cpu time 13.168521
+2019-10-14 19:08:33,823 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:08:43,829 - INFO - 293 : memory usage 568664
+2019-10-14 19:08:43,830 - INFO - 293 : child memory usage 84548
+2019-10-14 19:08:43,830 - INFO - 293 : cpu time 13.22228
+2019-10-14 19:08:43,831 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:08:53,837 - INFO - 293 : memory usage 568680
+2019-10-14 19:08:53,838 - INFO - 293 : child memory usage 84548
+2019-10-14 19:08:53,839 - INFO - 293 : cpu time 13.268784
+2019-10-14 19:08:53,840 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:09:03,847 - INFO - 293 : memory usage 568680
+2019-10-14 19:09:03,848 - INFO - 293 : child memory usage 84548
+2019-10-14 19:09:03,848 - INFO - 293 : cpu time 13.343287
+2019-10-14 19:09:03,849 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:09:13,856 - INFO - 293 : memory usage 568680
+2019-10-14 19:09:13,856 - INFO - 293 : child memory usage 84548
+2019-10-14 19:09:13,857 - INFO - 293 : cpu time 13.405892
+2019-10-14 19:09:13,858 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:09:23,858 - INFO - 293 : memory usage 568680
+2019-10-14 19:09:23,859 - INFO - 293 : child memory usage 84548
+2019-10-14 19:09:23,860 - INFO - 293 : cpu time 13.471783
+2019-10-14 19:09:23,860 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:09:33,867 - INFO - 293 : memory usage 568680
+2019-10-14 19:09:33,868 - INFO - 293 : child memory usage 84548
+2019-10-14 19:09:33,869 - INFO - 293 : cpu time 13.545839
+2019-10-14 19:09:33,876 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:09:43,877 - INFO - 293 : memory usage 568680
+2019-10-14 19:09:43,878 - INFO - 293 : child memory usage 84548
+2019-10-14 19:09:43,879 - INFO - 293 : cpu time 13.614864
+2019-10-14 19:09:43,879 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:09:53,886 - INFO - 293 : memory usage 568680
+2019-10-14 19:09:53,887 - INFO - 293 : child memory usage 84548
+2019-10-14 19:09:53,887 - INFO - 293 : cpu time 13.68498
+2019-10-14 19:09:53,888 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:10:03,896 - INFO - 293 : memory usage 568680
+2019-10-14 19:10:03,897 - INFO - 293 : child memory usage 84548
+2019-10-14 19:10:03,898 - INFO - 293 : cpu time 13.755783
+2019-10-14 19:10:03,898 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:10:13,905 - INFO - 293 : memory usage 568680
+2019-10-14 19:10:13,906 - INFO - 293 : child memory usage 84548
+2019-10-14 19:10:13,907 - INFO - 293 : cpu time 13.82482
+2019-10-14 19:10:13,907 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:10:23,908 - INFO - 293 : memory usage 568680
+2019-10-14 19:10:23,909 - INFO - 293 : child memory usage 84548
+2019-10-14 19:10:23,910 - INFO - 293 : cpu time 13.889156
+2019-10-14 19:10:23,910 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:10:33,916 - INFO - 293 : memory usage 568680
+2019-10-14 19:10:33,917 - INFO - 293 : child memory usage 84548
+2019-10-14 19:10:33,918 - INFO - 293 : cpu time 13.958271
+2019-10-14 19:10:33,918 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:10:43,919 - INFO - 293 : memory usage 568680
+2019-10-14 19:10:43,920 - INFO - 293 : child memory usage 84548
+2019-10-14 19:10:43,921 - INFO - 293 : cpu time 14.032243
+2019-10-14 19:10:43,921 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:10:53,922 - INFO - 293 : memory usage 568680
+2019-10-14 19:10:53,922 - INFO - 293 : child memory usage 84548
+2019-10-14 19:10:53,923 - INFO - 293 : cpu time 14.097622
+2019-10-14 19:10:53,923 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:11:03,930 - INFO - 293 : memory usage 568680
+2019-10-14 19:11:03,931 - INFO - 293 : child memory usage 84548
+2019-10-14 19:11:03,931 - INFO - 293 : cpu time 14.17311
+2019-10-14 19:11:03,932 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:11:13,940 - INFO - 293 : memory usage 568680
+2019-10-14 19:11:13,940 - INFO - 293 : child memory usage 84548
+2019-10-14 19:11:13,941 - INFO - 293 : cpu time 14.234627
+2019-10-14 19:11:13,942 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:11:23,948 - INFO - 293 : memory usage 568680
+2019-10-14 19:11:23,949 - INFO - 293 : child memory usage 84548
+2019-10-14 19:11:23,950 - INFO - 293 : cpu time 14.306126
+2019-10-14 19:11:23,950 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:11:33,957 - INFO - 293 : memory usage 568680
+2019-10-14 19:11:33,958 - INFO - 293 : child memory usage 84548
+2019-10-14 19:11:33,958 - INFO - 293 : cpu time 14.373672
+2019-10-14 19:11:33,959 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:11:43,965 - INFO - 293 : memory usage 568680
+2019-10-14 19:11:43,966 - INFO - 293 : child memory usage 84548
+2019-10-14 19:11:43,967 - INFO - 293 : cpu time 14.44325
+2019-10-14 19:11:43,967 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:11:53,975 - INFO - 293 : memory usage 568680
+2019-10-14 19:11:53,976 - INFO - 293 : child memory usage 84548
+2019-10-14 19:11:53,977 - INFO - 293 : cpu time 14.510006
+2019-10-14 19:11:53,978 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:12:03,985 - INFO - 293 : memory usage 568680
+2019-10-14 19:12:03,986 - INFO - 293 : child memory usage 84548
+2019-10-14 19:12:03,986 - INFO - 293 : cpu time 14.580933
+2019-10-14 19:12:03,987 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:12:13,994 - INFO - 293 : memory usage 568680
+2019-10-14 19:12:13,995 - INFO - 293 : child memory usage 84548
+2019-10-14 19:12:13,995 - INFO - 293 : cpu time 14.650932
+2019-10-14 19:12:13,996 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:12:24,003 - INFO - 293 : memory usage 568680
+2019-10-14 19:12:24,003 - INFO - 293 : child memory usage 84548
+2019-10-14 19:12:24,004 - INFO - 293 : cpu time 14.726988
+2019-10-14 19:12:24,004 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:12:34,011 - INFO - 293 : memory usage 568680
+2019-10-14 19:12:34,012 - INFO - 293 : child memory usage 84548
+2019-10-14 19:12:34,013 - INFO - 293 : cpu time 14.796392
+2019-10-14 19:12:34,013 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:12:44,014 - INFO - 293 : memory usage 568680
+2019-10-14 19:12:44,015 - INFO - 293 : child memory usage 84548
+2019-10-14 19:12:44,016 - INFO - 293 : cpu time 14.872247
+2019-10-14 19:12:44,016 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:12:54,017 - INFO - 293 : memory usage 568680
+2019-10-14 19:12:54,018 - INFO - 293 : child memory usage 84548
+2019-10-14 19:12:54,018 - INFO - 293 : cpu time 14.946876
+2019-10-14 19:12:54,019 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:13:04,026 - INFO - 293 : memory usage 568680
+2019-10-14 19:13:04,026 - INFO - 293 : child memory usage 84548
+2019-10-14 19:13:04,027 - INFO - 293 : cpu time 15.02205
+2019-10-14 19:13:04,027 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:13:14,034 - INFO - 293 : memory usage 568680
+2019-10-14 19:13:14,035 - INFO - 293 : child memory usage 84548
+2019-10-14 19:13:14,035 - INFO - 293 : cpu time 15.102679
+2019-10-14 19:13:14,036 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:13:24,037 - INFO - 293 : memory usage 568680
+2019-10-14 19:13:24,037 - INFO - 293 : child memory usage 84548
+2019-10-14 19:13:24,038 - INFO - 293 : cpu time 15.176981
+2019-10-14 19:13:24,038 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:13:34,046 - INFO - 293 : memory usage 568680
+2019-10-14 19:13:34,046 - INFO - 293 : child memory usage 84548
+2019-10-14 19:13:34,047 - INFO - 293 : cpu time 15.251393
+2019-10-14 19:13:34,047 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:13:44,048 - INFO - 293 : memory usage 568680
+2019-10-14 19:13:44,049 - INFO - 293 : child memory usage 84548
+2019-10-14 19:13:44,050 - INFO - 293 : cpu time 15.317775
+2019-10-14 19:13:44,050 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:13:54,058 - INFO - 293 : memory usage 568680
+2019-10-14 19:13:54,059 - INFO - 293 : child memory usage 84548
+2019-10-14 19:13:54,059 - INFO - 293 : cpu time 15.390466
+2019-10-14 19:13:54,060 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:14:04,066 - INFO - 293 : memory usage 568680
+2019-10-14 19:14:04,067 - INFO - 293 : child memory usage 84548
+2019-10-14 19:14:04,068 - INFO - 293 : cpu time 15.489532
+2019-10-14 19:14:04,068 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:14:14,075 - INFO - 293 : memory usage 568680
+2019-10-14 19:14:14,075 - INFO - 293 : child memory usage 84548
+2019-10-14 19:14:14,076 - INFO - 293 : cpu time 15.563407
+2019-10-14 19:14:14,077 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:14:24,083 - INFO - 293 : memory usage 568680
+2019-10-14 19:14:24,084 - INFO - 293 : child memory usage 84548
+2019-10-14 19:14:24,085 - INFO - 293 : cpu time 15.655208
+2019-10-14 19:14:24,086 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:14:34,096 - INFO - 293 : memory usage 568680
+2019-10-14 19:14:34,096 - INFO - 293 : child memory usage 84548
+2019-10-14 19:14:34,097 - INFO - 293 : cpu time 15.725518
+2019-10-14 19:14:34,097 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:14:44,104 - INFO - 293 : memory usage 568680
+2019-10-14 19:14:44,105 - INFO - 293 : child memory usage 84548
+2019-10-14 19:14:44,106 - INFO - 293 : cpu time 15.824402
+2019-10-14 19:14:44,106 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:14:54,107 - INFO - 293 : memory usage 568680
+2019-10-14 19:14:54,108 - INFO - 293 : child memory usage 84548
+2019-10-14 19:14:54,108 - INFO - 293 : cpu time 15.908816
+2019-10-14 19:14:54,109 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:15:04,116 - INFO - 293 : memory usage 568680
+2019-10-14 19:15:04,117 - INFO - 293 : child memory usage 84548
+2019-10-14 19:15:04,117 - INFO - 293 : cpu time 15.964302
+2019-10-14 19:15:04,118 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:15:14,125 - INFO - 293 : memory usage 568680
+2019-10-14 19:15:14,125 - INFO - 293 : child memory usage 84548
+2019-10-14 19:15:14,126 - INFO - 293 : cpu time 16.037363
+2019-10-14 19:15:14,127 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:15:24,134 - INFO - 293 : memory usage 568680
+2019-10-14 19:15:24,135 - INFO - 293 : child memory usage 84548
+2019-10-14 19:15:24,136 - INFO - 293 : cpu time 16.111047
+2019-10-14 19:15:24,136 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:15:34,143 - INFO - 293 : memory usage 568680
+2019-10-14 19:15:34,144 - INFO - 293 : child memory usage 84548
+2019-10-14 19:15:34,145 - INFO - 293 : cpu time 16.186572
+2019-10-14 19:15:34,145 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:15:44,146 - INFO - 293 : memory usage 568680
+2019-10-14 19:15:44,147 - INFO - 293 : child memory usage 84548
+2019-10-14 19:15:44,147 - INFO - 293 : cpu time 16.2526
+2019-10-14 19:15:44,148 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:15:54,154 - INFO - 293 : memory usage 568680
+2019-10-14 19:15:54,155 - INFO - 293 : child memory usage 84548
+2019-10-14 19:15:54,156 - INFO - 293 : cpu time 16.325024
+2019-10-14 19:15:54,156 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:16:04,163 - INFO - 293 : memory usage 568680
+2019-10-14 19:16:04,164 - INFO - 293 : child memory usage 84548
+2019-10-14 19:16:04,165 - INFO - 293 : cpu time 16.390341
+2019-10-14 19:16:04,165 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:16:14,172 - INFO - 293 : memory usage 568680
+2019-10-14 19:16:14,172 - INFO - 293 : child memory usage 84548
+2019-10-14 19:16:14,173 - INFO - 293 : cpu time 16.462094
+2019-10-14 19:16:14,173 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:16:24,180 - INFO - 293 : memory usage 568680
+2019-10-14 19:16:24,181 - INFO - 293 : child memory usage 84548
+2019-10-14 19:16:24,182 - INFO - 293 : cpu time 16.537614
+2019-10-14 19:16:24,182 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:16:34,189 - INFO - 293 : memory usage 568680
+2019-10-14 19:16:34,190 - INFO - 293 : child memory usage 84548
+2019-10-14 19:16:34,191 - INFO - 293 : cpu time 16.608137
+2019-10-14 19:16:34,191 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:16:44,192 - INFO - 293 : memory usage 568680
+2019-10-14 19:16:44,193 - INFO - 293 : child memory usage 84548
+2019-10-14 19:16:44,193 - INFO - 293 : cpu time 16.685631
+2019-10-14 19:16:44,194 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:16:54,200 - INFO - 293 : memory usage 568680
+2019-10-14 19:16:54,201 - INFO - 293 : child memory usage 84548
+2019-10-14 19:16:54,202 - INFO - 293 : cpu time 16.750557
+2019-10-14 19:16:54,202 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:17:04,210 - INFO - 293 : memory usage 568680
+2019-10-14 19:17:04,210 - INFO - 293 : child memory usage 84548
+2019-10-14 19:17:04,211 - INFO - 293 : cpu time 16.821296
+2019-10-14 19:17:04,211 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:17:14,218 - INFO - 293 : memory usage 568680
+2019-10-14 19:17:14,219 - INFO - 293 : child memory usage 84548
+2019-10-14 19:17:14,220 - INFO - 293 : cpu time 16.914997
+2019-10-14 19:17:14,220 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:17:24,228 - INFO - 293 : memory usage 568680
+2019-10-14 19:17:24,229 - INFO - 293 : child memory usage 84548
+2019-10-14 19:17:24,230 - INFO - 293 : cpu time 16.986785
+2019-10-14 19:17:24,231 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:17:34,238 - INFO - 293 : memory usage 568680
+2019-10-14 19:17:34,238 - INFO - 293 : child memory usage 84548
+2019-10-14 19:17:34,239 - INFO - 293 : cpu time 17.058661
+2019-10-14 19:17:34,240 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:17:44,240 - INFO - 293 : memory usage 568680
+2019-10-14 19:17:44,241 - INFO - 293 : child memory usage 84548
+2019-10-14 19:17:44,242 - INFO - 293 : cpu time 17.13218
+2019-10-14 19:17:44,242 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:17:54,243 - INFO - 293 : memory usage 568680
+2019-10-14 19:17:54,244 - INFO - 293 : child memory usage 84548
+2019-10-14 19:17:54,245 - INFO - 293 : cpu time 17.203118
+2019-10-14 19:17:54,245 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:18:04,252 - INFO - 293 : memory usage 568680
+2019-10-14 19:18:04,253 - INFO - 293 : child memory usage 84548
+2019-10-14 19:18:04,254 - INFO - 293 : cpu time 17.291696
+2019-10-14 19:18:04,261 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:18:14,262 - INFO - 293 : memory usage 568684
+2019-10-14 19:18:14,262 - INFO - 293 : child memory usage 84548
+2019-10-14 19:18:14,263 - INFO - 293 : cpu time 17.345364
+2019-10-14 19:18:14,264 - INFO - 293 : child cpu time 0.071181
+2019-10-14 19:18:14,529 - INFO - 293 : Stopping usage telemetry collection

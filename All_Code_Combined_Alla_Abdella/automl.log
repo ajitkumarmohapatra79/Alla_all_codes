@@ -1,0 +1,83 @@
+2019-11-08 01:24:49,496 - WARNING - 295 : XGBoost is included in recommended algorithms list but not installed locally. If you would like to include XGBoost models in the recommended algorithms please install XGBoost locally. Adding XGBoost to the blacklist.
+2019-11-08 01:24:49,599 - INFO - 295 : Starting usage telemetry collection
+2019-11-08 01:24:50,052 - DEBUG - 295 : Skipping DNN packages since enable_dnn=False.
+2019-11-08 01:24:50,053 - INFO - 295 : Package azureml-train-automl missing from dependencies file.
+2019-11-08 01:24:50,053 - INFO - 295 : Using installed version: azureml-train-automl==1.0.72
+2019-11-08 01:24:50,054 - INFO - 295 : Package azureml-explain-model missing from dependencies file.
+2019-11-08 01:24:50,054 - INFO - 295 : Using installed version: azureml-explain-model==1.0.69
+2019-11-08 01:24:50,054 - INFO - 295 : Package azureml-dataprep missing from dependencies file.
+2019-11-08 01:24:50,055 - INFO - 295 : Using installed version: azureml-dataprep==1.1.29
+2019-11-08 01:24:50,055 - INFO - 295 : Package numpy missing from dependencies file.
+2019-11-08 01:24:50,055 - INFO - 295 : Using installed version: numpy==1.16.2
+2019-11-08 01:24:50,056 - INFO - 295 : Package py-xgboost missing from dependencies file.
+2019-11-08 01:24:50,056 - INFO - 295 : Using pinned version: py-xgboost<=0.80
+2019-11-08 01:24:50,057 - INFO - 295 : Package inference-schema missing from dependencies file.
+2019-11-08 01:24:50,057 - INFO - 295 : Package fbprophet missing from dependencies file.
+2019-11-08 01:24:50,058 - INFO - 295 : Package setuptools-git missing from dependencies file.
+2019-11-08 01:24:54,731 - INFO - 295 : Validation service found the data has no errors.
+2019-11-08 01:24:54,732 - INFO - 295 : Start creating parent run with DTO:  - name: mlops-automl1
+ - subscription_id: be564fde-136b-4709-b7b6-abfc0bdfc134
+ - region: centralus
+ - spark_context: None
+ - spark_service: None
+ - azure_service: None
+ - iterations: 25
+ - primary_metric: AUC_weighted
+ - task_type: classification
+ - validation_size: 0.0
+ - n_cross_validations: 2
+ - y_min: None
+ - y_max: None
+ - num_classes: None
+ - featurization: auto
+ - preprocess: True
+ - lag_length: 0
+ - is_timeseries: False
+ - max_cores_per_iteration: 10
+ - max_concurrent_iterations: 1
+ - iteration_timeout_minutes: 5
+ - mem_in_mb: None
+ - enforce_time_on_windows: False
+ - experiment_timeout_minutes: None
+ - experiment_exit_score: None
+ - whitelist_models: None
+ - blacklist_algos: ['XGBoostClassifier', 'Prophet']
+ - supported_models: ['LogisticRegression', 'SGD', 'MultinomialNaiveBayes', 'BernoulliNaiveBayes', 'SVM', 'LinearSVM', 'KNN', 'DecisionTree', 'RandomForest', 'ExtremeRandomTrees', 'LightGBM', 'XGBoostClassifier', 'AveragedPerceptronClassifier', 'AveragedPerceptronClassifier', 'LinearSVMClassifier', 'LinearSVMClassifier', 'GradientBoosting', 'TensorFlowDNN', 'TensorFlowLinearClassifier']
+ - auto_blacklist: True
+ - blacklist_samples_reached: False
+ - exclude_nan_labels: True
+ - verbosity: 10
+ - show_warnings: False
+ - model_explainability: False
+ - service_url: None
+ - sdk_url: None
+ - sdk_packages: None
+ - enable_onnx_compatible_models: False
+ - enable_split_onnx_featurizer_estimator_models: False
+ - vm_type: STANDARD_D2_V2
+ - telemetry_verbosity: INFO
+ - send_telemetry: True
+ - enable_dnn: False
+ - enable_feature_sweeping: True
+ - enable_early_stopping: False
+ - early_stopping_n_iters: 10
+ - metrics: None
+ - enable_ensembling: True
+ - enable_stack_ensembling: True
+ - ensemble_iterations: 15
+ - enable_tf: False
+ - enable_cache: True
+ - enable_subsampling: False
+ - subsample_seed: None
+ - enable_nimbusml: False
+ - enable_streaming: False
+ - label_column_name: None
+ - weight_column_name: None
+ - cost_mode: 0
+ - metric_operation: maximize.
+2019-11-08 01:24:55,210 - INFO - 295 : [ParentRunID:AutoML_f640774c-c5d5-4a53-b1fb-a04e9469c528] Remote run using input X and y.
+2019-11-08 01:24:55,560 - INFO - 295 : [RunId:AutoML_f640774c-c5d5-4a53-b1fb-a04e9469c528]SDK dependencies versions:{"azureml-widgets": "1.0.72", "azureml-train": "1.0.72", "azureml-train-restclients-hyperdrive": "1.0.72", "azureml-train-core": "1.0.72", "azureml-train-automl": "1.0.72", "azureml-tensorboard": "1.0.69", "azureml-telemetry": "1.0.72", "azureml-sdk": "1.0.72", "azureml-samples": "0+unknown", "azureml-pipeline": "1.0.72", "azureml-pipeline-steps": "1.0.72", "azureml-pipeline-core": "1.0.72", "azureml-opendatasets": "1.0.69", "azureml-model-management-sdk": "1.0.1b6.post1", "azureml-interpret": "1.0.69", "azureml-explain-model": "1.0.69", "azureml-defaults": "1.0.72", "azureml-dataprep": "1.1.29", "azureml-dataprep-native": "13.1.0", "azureml-core": "1.0.72", "azureml-contrib-services": "1.0.69", "azureml-contrib-server": "1.0.69", "azureml-contrib-reinforcementlearning": "0.1.0.5919674", "azureml-contrib-opendatasets": "1.0.45", "azureml-contrib-notebook": "1.0.72", "azureml-contrib-interpret": "1.0.69", "azureml-contrib-datadrift": "1.0.69", "azureml-automl-core": "1.0.72.1"}.
+2019-11-08 01:24:55,662 - INFO - 295 : Parent Run ID: AutoML_f640774c-c5d5-4a53-b1fb-a04e9469c528
+2019-11-08 01:24:56,484 - INFO - 295 : Snapshotted folder: ./contoso-aml with snapshot_id: 1b7466f7-5af0-42db-b387-1a15403eb38f
+2019-11-08 01:24:56,485 - INFO - 295 : Starting a snapshot run (snapshotId : 1b7466f7-5af0-42db-b387-1a15403eb38f)
+2019-11-08 01:24:57,153 - INFO - 295 : Stopping usage telemetry collection
